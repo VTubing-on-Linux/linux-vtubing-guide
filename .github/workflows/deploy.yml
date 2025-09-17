@@ -3,6 +3,10 @@ name: Deploy VitePress site to GitHub Pages
 on:
   push:
     branches: [master]
+    paths:
+      - "src/**"
+      - ".vitepress/**"
+      - "package-lock.json"
   workflow_dispatch:
 
 permissions:
