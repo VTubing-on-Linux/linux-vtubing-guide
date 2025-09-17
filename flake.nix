@@ -5,6 +5,7 @@
 
   outputs =
     {
+      self,
       nixpkgs,
       systems,
       ...
@@ -15,6 +16,10 @@
       pkgsFor = forAllSystems (system: nixpkgs.legacyPackages.${system});
     in
     {
+      packages = forAllSystems (system: {
+        default = pkgsFor.${system}.callPackage ./nix/pkgs/linux-vtubing-guide { };
+      });
+
       devShells = forAllSystems (
         system: with pkgsFor.${system}; {
           default = mkShell {
