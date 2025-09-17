@@ -7,6 +7,9 @@ hero:
   tagline: "Community maintained guide to VTubing on Linux"
   actions:
     - theme: brand
+      text: Introduction
+      link: /introduction
+    - theme: alt
       text: Markdown Examples
       link: /markdown-examples
     - theme: alt

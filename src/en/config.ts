@@ -11,6 +11,9 @@ export default defineAdditionalConfig({
 
     sidebar: [
       {
+        items: [{ text: "Introduction", link: "/introduction" }],
+      },
+      {
         text: "Examples",
         items: [
           { text: "Markdown Examples", link: "/markdown-examples" },
