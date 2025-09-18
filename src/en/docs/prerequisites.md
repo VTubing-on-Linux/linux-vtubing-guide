@@ -157,7 +157,8 @@ For Arch: https://wiki.archlinux.org/title/NVIDIA
 
 For audio you may want to grab the following packages: 
 
-```pavucontrol
+```
+pavucontrol
 qjackctl
 qpwgraph
 easyeffects
