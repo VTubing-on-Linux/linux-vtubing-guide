@@ -17,10 +17,10 @@ hero:
       link: /examples/api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Learn how to VTube on Linux
+    details: We will cover the basics of setting up a VTubing environment on Linux, including software recommendations and configuration tips.
+  - title: Make the switch to Linux
+    details: Learn about the benefits of using Linux for VTubing and how to transition your existing setup.
+  - title: Discover open-source tools
+    details: Explore a variety of open-source software options for VTubing, from 2D to 3D applications.
 ---
