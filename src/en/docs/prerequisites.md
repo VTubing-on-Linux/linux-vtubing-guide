@@ -1,43 +1,78 @@
 # Prerequisites:
 
-- Decide what style of VTuber you want to be. The common options are 3D, 2D, or PNG.
+Decide what style of VTuber you want to be. The common options are 3D, 2D, or PNG.
 
-	- For 3D, the standard is to have a 3D model in the VRM format, though there are other formats specific to certain software such as VSFavatar for VSeeFace. 3D has many advantages for editing and posing but may struggle to achieve some desired art styles.
+::: info 3D
+For 3D, the standard is to have a 3D model in the VRM format, though there are
+other formats specific to certain software such as VSFavatar for VSeeFace. 3D
+has many advantages for editing and posing but may struggle to achieve some
+desired art styles.
+:::
 
-	- For 2D, you have two options: Live2D which is the most popular and widely used, or Inochi2D which is a new still in-development format that, while incompatible with Live2D, offers similar features as an open source format. Please remember Inochi2D is still not at a 1.0 release yet if you decide to use it.
+:::: info 2D
 
-	- PNG Tubers use a single image, or a handful of edited version of an image, with a program to warp, move, and transform the image in response to audio. This option is the easiest to make and set up but has the most limitations.
+For 2D, you have two options:
 
-- A Linux distro of your choosing
-	- If you want to test out some Distros Check out [DistroSea](https://distrosea.com/)
+::: info Live2D
+Live2D is the most popular and widely used, or Inochi2D which is a new still
+in-development format that, while incompatible with Live2D, offers similar
+features as an open source format. Please remember Inochi2D is still not at a
+1.0 release yet if you decide to use it.
+:::
 
-	- Be aware that there are two different desktop backends on Linux: X11 and Wayland. The TL;DR is Wayland is newer and usually better, but there may be some legacy features in X11 that haven't quite made their way to Wayland yet. This is explained in more detail later on. 
+::: info PNG Tuber
+PNG Tubers use a single image, or a handful of edited version of an image, with
+a program to warp, move, and transform the image in response to audio. This
+option is the easiest to make and set up but has the most limitations.
+:::
 
-- Vtube Studio, VSeeFace, or any other face tracking application that may work on Linux.
+::::
 
-- Make sure your Wine dependencies are updated by running the appropriate command for your distribution in a terminal:
+### Linux Distribution
 
-    - **Ubuntu/Debian:**
-        ```bash
-        sudo apt update && sudo apt install wine
-        ```
+A Linux distro of your choosing
 
-    - **Fedora:**
-        ```bash
-        sudo dnf update && sudo dnf install wine
-        ```
+::: tip
+If you want to test out some Distros Check out
+[DistroSea](https://distrosea.com/)
+:::
 
-    - **Nobara:**
-        ```bash
-        nobara-sync cli
-        sudo dnf install wine
-        ```
+::: info
+Be aware that there are two different desktop backends on Linux: X11 and
+Wayland. The TL;DR is Wayland is newer and usually better, but there may be
+some legacy features in X11 that haven't quite made their way to Wayland yet.
+This is explained in more detail later on.
+:::
 
-    - **Arch Linux:**
-        ```bash
-        sudo pacman -Syu wine
-        ```
+### Face Tracking
 
+Vtube Studio, VSeeFace, or any other face tracking application that may work on Linux.
+
+### Wine
+
+Make sure your Wine dependencies are updated by running the appropriate command
+for your distribution in a terminal:
+
+::: code-group
+
+```sh [Debian-based]
+sudo apt update && sudo apt install wine
+```
+
+```sh [Fedora]
+sudo dnf update && sudo dnf install wine
+```
+
+```sh [Nobara]
+nobara-sync cli
+sudo dnf install wine
+```
+
+```sh [Arch-based]
+sudo pacman -Syu wine
+```
+
+:::
 
 ## 3D Vtubing Programs
 
