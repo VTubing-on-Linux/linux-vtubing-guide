@@ -69,7 +69,7 @@ Next navigate to services with vtube studio open with plugins enabled a pop up a
 
 It should connect to the program properly
 
-Create a Browser source and put this in the url part of it as on linux the copy command in Mix it up doesn't work properly: http://localhost 8111/overlay/ 
+Create a Browser source and put this in the url part of it as on linux the copy command in Mix it up doesn't work properly: http://localhost:8111/overlay/
 
 Next follow this video guide by Demythical to add your redeems https://youtu.be/mRpHrXeK5s0 
 Tada now you should have redeems working with obs and vtube studio!
