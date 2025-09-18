@@ -15,3 +15,9 @@ Format files
 ```sh
 npm run fmt
 ```
+
+Build
+
+```sh
+npm run build
+```
