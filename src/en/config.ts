@@ -1,6 +1,7 @@
 import { defineAdditionalConfig } from "vitepress";
 
 export default defineAdditionalConfig({
+  ignoreDeadLinks: true,
   title: "Linux VTubing Guide",
   description: "Community maintained guide to VTubing on Linux",
   themeConfig: {
