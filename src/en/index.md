@@ -9,12 +9,9 @@ hero:
     - theme: brand
       text: Introduction
       link: /introduction
-    - theme: alt
-      text: Markdown Examples
-      link: /examples/markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /examples/api-examples
+ #   - theme: alt
+ #     text: Markdown Examples
+ #     link: /examples/markdown-examples
 
 features:
   - title: Learn how to VTube on Linux
@@ -24,3 +21,7 @@ features:
   - title: Discover open-source tools
     details: Explore a variety of open-source software options for VTubing, from 2D to 3D applications.
 ---
+
+::: warning
+🚧 This guide is currently under active development. Content may be incomplete or change frequently. 🚧
+:::

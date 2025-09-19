@@ -7,7 +7,6 @@ export default defineAdditionalConfig({
     nav: [
       { text: "Introduction", link: "/docs/docs" },
       { text: "Installation", link: "/docs/installation" },
-      { text: "Audio", link: "/docs/audio" },
       { text: "OBS", link: "/docs/obs" },
       { text: "3D VTubing", link: "/docs/3d_vtubing" },
     ],
