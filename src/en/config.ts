@@ -20,11 +20,10 @@ export default defineAdditionalConfig({
           { text: "Prerequisites", link: "/docs/prerequisites" },
           { text: "Installation", link: "/docs/installation" },
           { text: "Wayland/Xorg", link: "/docs/wayland_xorg" },
-          
-          { text: "Audio", link: "/docs/audio" },
           { text: "OBS", link: "/docs/obs" },
-          { text: "3D VTubing", link: "/docs/3d_vtubing" },
           { text: "Apps", link: "/docs/apps" },
+          { text: "3D VTubing", link: "/docs/3d_vtubing" },
+          { text: "Audio", link: "/docs/audio" },
           { text: "Other Software", link: "/docs/other_software" },
           { text: "Nix", link: "/docs/nix" },
           { text: "Contributors", link: "/docs/contributors" },
