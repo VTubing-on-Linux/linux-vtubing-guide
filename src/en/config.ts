@@ -19,9 +19,10 @@ export default defineAdditionalConfig({
           { text: "Introduction", link: "/docs/docs" },
           { text: "Prerequisites", link: "/docs/prerequisites" },
           { text: "Installation", link: "/docs/installation" },
+          { text: "Wayland/Xorg", link: "/docs/wayland_xorg" },
+          
           { text: "Audio", link: "/docs/audio" },
           { text: "OBS", link: "/docs/obs" },
-          { text: "Wayland/Xorg", link: "/docs/wayland_xorg" },
           { text: "3D VTubing", link: "/docs/3d_vtubing" },
           { text: "Apps", link: "/docs/apps" },
           { text: "Other Software", link: "/docs/other_software" },
