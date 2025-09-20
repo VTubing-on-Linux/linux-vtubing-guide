@@ -69,10 +69,10 @@ If you are still on Linux Mint 21 or a distro with a similar update patternI Hig
 
 ## OBS Plugins That are useful
 
-[Pipewire Audio capture](https://obsproject.com/forum/resources/pipewire-audio-capture.1458/) this makes it significantly easier to choose the audio source in OBS
-[Aitum Multistream](https://obsproject.com/forum/resources/aitum-multistream.1991/) The best Multistreaming solution
-[Multi RTMP](https://obsproject.com/forum/resources/multiple-rtmp-outputs-plugin.964/) The other Multistreaming solution
-[Closed Captions Plugin](https://obsproject.com/forum/resources/closed-captioning-via-google-speech-recognition.833/) Good plugin for the hearing impaired
-[DistroAV](https://obsproject.com/forum/resources/distroav-network-audio-video-in-obs-studio-using-ndi%C2%AE-technology.528/) This plugin has alot of NDI capture/Sound/Filter options
-[Scale to Sound](https://obsproject.com/forum/resources/scale-to-sound.1336/) makes a source scale based on the audio levels of any audio source you choose
-[atkAudio Plugin](https://obsproject.com/forum/resources/atkaudio-plugin.2099/) Super advanced audio plugin comes with Audio equalizer , its own Audio patch bay and also able to select and change sources to your hearts desire 
+- [Pipewire Audio capture](https://obsproject.com/forum/resources/pipewire-audio-capture.1458/) this makes it significantly easier to choose the audio source in OBS
+- [Aitum Multistream](https://obsproject.com/forum/resources/aitum-multistream.1991/) The best Multistreaming solution
+- [Multi RTMP](https://obsproject.com/forum/resources/multiple-rtmp-outputs-plugin.964/) The other Multistreaming solution
+- [Closed Captions Plugin](https://obsproject.com/forum/resources/closed-captioning-via-google-speech-recognition.833/) Good plugin for the hearing impaired
+- [DistroAV](https://obsproject.com/forum/resources/distroav-network-audio-video-in-obs-studio-using-ndi%C2%AE-technology.528/) This plugin has alot of NDI capture/Sound/Filter options
+- [Scale to Sound](https://obsproject.com/forum/resources/scale-to-sound.1336/) makes a source scale based on the audio levels of any audio source you choose
+- [atkAudio Plugin](https://obsproject.com/forum/resources/atkaudio-plugin.2099/) Super advanced audio plugin comes with Audio equalizer , its own Audio patch bay and also able to select and change sources to your hearts desires
