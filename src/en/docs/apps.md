@@ -1,14 +1,14 @@
 
 # Install Steam & Proton/GE-Proton
 
-Steam Proton is a very valuable aspect of this whole thing as it is the one that is able to interface with a lot of the applications here, so use the links above and download steam and get VTube studio, or any of the other applications mentioned above as possible alternatives. Once you have signed into steam make sure you also go to Settings -> Compatibility -> enable steam play -> then reboot steam once you are prompted.
+Steam Proton is a very valuable aspect of this whole thing as it is the one that is able to interface with a lot of the applications here, so use the links above and download steam and get [VTube studio](https://store.steampowered.com/app/1325860/VTube_Studio/), or any of the other applications mentioned above as possible alternatives. Once you have signed into steam make sure you also go to Settings -> Compatibility -> enable steam play -> then reboot steam once you are prompted.
 
 To install Proton-GE, download the ProtonUp-Qt app linked earlier in this guide and run it. The app will give you a menu for what version to download and where to install it to. As the writing of this guide, GE-Proton9-11 works the best. This is however subject to change.
 
 
 # Vtube Studio 
 
-Firstly grab Vtube studio off of steam and install it , go into the compatibility settings and choose either ProtonExperimental or use the latest Ge-Proton verson, then go into the files and navigate to streaming assets, put the [IP.txt file](https://gist.github.com/DenchiSoft/122729d9a0bd0f96798bea28bfe146d6) from here after you downloaded it and put it in the streaming assets folder.
+Firstly grab  [VTube studio](https://store.steampowered.com/app/1325860/VTube_Studio/) off of steam and install it , go into the compatibility settings and choose either ProtonExperimental or use the latest Ge-Proton verson, then go into the files and navigate to streaming assets, put the [IP.txt file](https://gist.github.com/DenchiSoft/122729d9a0bd0f96798bea28bfe146d6) from here after you downloaded it and put it in the streaming assets folder.
 
 Once that is said and done make sure you grab the Flatpak for [Face tracker](https://flathub.org/apps/de.z_ray.Facetracker) this will already have the appropriate settings enabled but you may change a few to see fit, make sure you select your webcam and also enable it! 
 
@@ -24,7 +24,7 @@ If you want your Screenshots to be more accessiable and not behind 17 folders Ch
 
 # VBridger
 
-VBridger is a program to give advanced arkit tracking to both 2d and 3d models. That tracking can be use with an Iphone this program can be launched via enabling Proton in the Steam compatibility mode, You should then be able to attach it via a port or a plugin depending on the vtubing application used, if you are having issues with the program tracking your Iphone you need to make sure that you are using the alternative 3rd Party PC clients option and to make sure you allow the connection through your distros firewall
+[VBridger](https://store.steampowered.com/app/1898830/VBridger/) is a program to give advanced arkit tracking to both 2d and 3d models. That tracking can be use with an Iphone this program can be launched via enabling Proton in the Steam compatibility mode, You should then be able to attach it via a port or a plugin depending on the vtubing application used, if you are having issues with the program tracking your Iphone you need to make sure that you are using the alternative 3rd Party PC clients option and to make sure you allow the connection through your distros firewall
 
 
 # UMU Launcher 
