@@ -1,11 +1,11 @@
 # Contributing?
 If you want to contribute, feel free to open a PR or an issue on GitHub. We welcome contributions of all kinds!
 
-**Original guide was made by KYLONEKO under CC-BY-NC-SA 4.0 License.**
+**Original guide was made by KYLONEKO under CC-BY-NC-SA 4.0 License.** Original guide can be obtained [here](https://codeberg.org/KyloNeko/Linux-Guide-to-Vtubing)
 
 ## List of Contributors! :
 
-- [KYLONEKO](https://kyloneko.com) - Original Author
+- [KYLONEKO](https://kyloneko.net) - Original Author
 - [RogueRen](https://codeberg.org/RogueRen) - Guide Rewrite
 - [Maruseu ](https://maruseu.moe/)   - Help with gamecapture on obs/VTS
 - [corbentfrost](https://x.com/corbentfrost) - Help with some 3d face tracking and Body tracking Sofware
