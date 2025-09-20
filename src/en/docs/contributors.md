@@ -1,5 +1,6 @@
 # Contributing?
 If you want to contribute, feel free to open a PR or an issue on GitHub. We welcome contributions of all kinds!
+If you're not quite sure how to contribute, you can check out this [github guide](https://github.com/SPSKNM-cvicenia/Github-Introduction-EN) on how to contribute to open source projects on GitHub.
 
 **Original guide was made by KYLONEKO under CC-BY-NC-SA 4.0 License.** Original guide can be obtained [here](https://codeberg.org/KyloNeko/Linux-Guide-to-Vtubing)
 
@@ -13,6 +14,7 @@ If you want to contribute, feel free to open a PR or an issue on GitHub. We welc
 - [LinkyKatsumiVT](https://bsky.app/profile/linkachus17.de) - made the wiki version of this guide
 - [Sundae](https://bsky.app/profile/pixelsundae.bsky.social) - Helped with asking for adding umulauncher and givng an explination behind it/supplying some files
 - [Brodie](https://www.youtube.com/@TechOverTea) - Our lord and savior.......oh and also he let me know boatswain is outdated, he also did the audio patchbay video
+- [hiimmilan](https://hiimmilan.dev) - something
 - lacespades & tellur1an helped with NixOS issues
 - hachimagi - helped with some additionals to various parts of the document
 - SpiderUnderUrBed - NixOS Suggestion
