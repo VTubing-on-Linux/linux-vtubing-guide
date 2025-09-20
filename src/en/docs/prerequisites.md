@@ -1,12 +1,9 @@
 # Prerequisites:
 
-Decide what style of VTuber you want to be. The common options are 3D, 2D, or PNG.
+You need to decide what style of VTuber you want to be. The common options are 3D, 2D, or PNG.
 
 ::: info 3D
-For 3D, the standard is to have a 3D model in the VRM format, though there are
-other formats specific to certain software such as VSFavatar for VSeeFace. 3D
-has many advantages for editing and posing but may struggle to achieve some
-desired art styles.
+For 3D, the standard is to have a 3D model in the VRM format, though there are other formats specific to certain software such as VSFavatar for VSeeFace. 3D has many advantages for editing and posing but may struggle to achieve some desired art styles.
 :::
 
 :::: info 2D
@@ -14,23 +11,22 @@ desired art styles.
 For 2D, you have two options:
 
 ::: info Live2D
-Live2D is the most popular and widely used, or Inochi2D which is a new still
-in-development format that, while incompatible with Live2D, offers similar
-features as an open source format. Please remember Inochi2D is still not at a
-1.0 release yet if you decide to use it.
+Live2D is the most popular and widely used option for 2D VTubing. Live2D models are widely supported by tracking applications that run on Linux, such as VTube Studio.
 :::
 
+::: info Innochi2D
+Inochi2D is an open-source alternative to Live2D. It is still in development and not at a 1.0 release yet, so it may have some bugs or missing features. Innochi2D has separate model creation software from Live2D, so you cannot use Live2D models in Innochi2D or vice versa.
+:::
+
+
 ::: info PNG Tuber
-PNG Tubers use a single image, or a handful of edited version of an image, with
-a program to warp, move, and transform the image in response to audio. This
-option is the easiest to make and set up but has the most limitations.
+PNG Tubers use a single image, or a handful of edited version of an image, with a program to warp, move, and transform the image in response to audio. This option is the easiest to make and set up but has the most limitations.
 :::
 
 ::::
 
 ### Linux Distribution
-
-A Linux distro of your choosing
+A Linux distribution (distro) is an operating system built on the Linux kernel. Popular choices include Ubuntu, Fedora, and Arch Linux, but any modern distro will work.
 
 ::: tip
 If you want to test out some Distros Check out
@@ -46,11 +42,11 @@ This is explained in more detail later on.
 
 ### Face Tracking
 
-Vtube Studio, VSeeFace, or any other face tracking application that may work on Linux.
+Vtube Studio, VSeeFace, or any other face tracking application that may work on Linux. 
 
 ### Wine
 
-Make sure your Wine dependencies are updated by running the appropriate command
+Wine is a compatibility layer that allows you to run Windows applications on Linux. Most VTubing software is designed for Windows, so you'll need Wine to run them on Linux. Make sure your Wine dependencies are updated by running the appropriate command
 for your distribution in a terminal:
 
 ::: code-group
