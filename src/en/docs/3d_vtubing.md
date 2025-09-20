@@ -1,9 +1,9 @@
 # 3D Vtubing
 
 
-Follow this video made by [Robo n' Tux Guides](https://youtu.be/H0YotaNSbDc?si=EkrrlxiQ-h6eEDKr)
+Follow this video made by [Robo n' Tux Guides](https://youtu.be/H0YotaNSbDc)
 
-VSeeFace is covered in that video [here](https://youtu.be/H0YotaNSbDc?si=FyiimfEbSMJmYNDL&t=223)
+VSeeFace is covered in that video [here](https://youtu.be/H0YotaNSbDc)
 
 For OBS game capture you will need a plugin called [OBS-VKcapture](https://github.com/nowrep/obs-vkcapture) installed. As far as I'm aware Vtube Studio doesn't play nicely with linux gamecapture as a launch option just yet but VSeeFace should.
 
