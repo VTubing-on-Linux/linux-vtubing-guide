@@ -5,6 +5,9 @@ layout: home
 hero:
   name: "Linux VTubing Guide"
   tagline: "Community maintained guide to VTubing on Linux"
+  image:
+    src: /logo.svg
+    alt: "Linux VTubing Guide"
   actions:
     - theme: brand
       text: Introduction
