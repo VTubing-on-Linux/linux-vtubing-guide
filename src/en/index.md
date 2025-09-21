@@ -26,5 +26,9 @@ features:
 ---
 
 ::: warning
+This guide is currently empty. 
+:::
+
+::: warning
 🚧 This guide is currently under active development. Content may be incomplete or change frequently. 🚧
 :::
