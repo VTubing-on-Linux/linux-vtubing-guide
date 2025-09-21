@@ -23,7 +23,7 @@ export default defineAdditionalConfig({
       {
         text: "Linux",
         items: [
-          { text: "Installation", link: "/docs/installation" },
+          { text: "Installation", link: "/docs/linux/installation" },
           { text: "Running windows software", link: "/docs/linux/running_windows_software" },
           { text: "Wayland vs. X11", link: "/docs/linux/wayland_vs_xorg" },
           { text: "NixOS", link: "/docs/linux/nix" },
@@ -32,7 +32,7 @@ export default defineAdditionalConfig({
       {
         text: "Streaming",
         items: [
-          { text: "OBS", link: "/docs/obs" },
+          { text: "OBS", link: "/docs/streaming/obs" },
           { text: "Window Capture on Linux", link: "/docs/streaming/capture" },
           { text: "Audio setup + tools", link: "/docs/streaming/audio" }
         ],
