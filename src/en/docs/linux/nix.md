@@ -39,7 +39,7 @@ imports = [
 my-custom-option.obs-with-all-my-plugins.enable = true;
 
 # And enable gaming options (installs steam, wine, etc)
-my-custom-option.gaming.enable = false;
+my-custom-option.gaming.enable = true;
 
 # Some hardware-specific configuration
 hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
@@ -56,7 +56,7 @@ imports = [
 
 # Suppose this is my potato laptop
 
-# We don't need these cpu intenside programs
+# We don't need these programs in this potato
 my-custom-option.obs-with-all-my-plugins.enable = false;
 my-custom-option.gaming.enable = false;
 
