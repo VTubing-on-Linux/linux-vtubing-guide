@@ -13,5 +13,15 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "fmt": "prettier . --write"
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": ".md",
+        "options": {
+          "parser": "mdx"
+        }
+      }
+    ]
   }
 }
