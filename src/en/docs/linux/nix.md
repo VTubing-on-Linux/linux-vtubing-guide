@@ -75,7 +75,7 @@ hardware.graphics.extraPackages = with pkgs; [
 All packages are built in isolation from each other and have their dependencies
 explicitely declared. If it works on one machine, it _should_ work on another.
 
-Here's an example of a pseudo application packaged with nix:
+::: details Example of a pseudo application packaged with nix:
 
 ```nix
 # inputs
@@ -130,6 +130,8 @@ stdenv.mkDerivation {
   };
 }
 ```
+
+:::
 
 If you want to see more examples, check out the
 [`nixpkgs`](https://github.com/NixOS/nixpkgs) repository, it contains a
