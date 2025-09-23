@@ -215,7 +215,7 @@ nix-collect-garbarge
 versions of the same library and co-exist in the nix store without affecting
 one another.
 
-### Installing packages
+## Installing packages
 
 It's easy to select older or bleeding edge version of packages simply by
 changing the nixpkgs revision.
@@ -277,7 +277,7 @@ your system. This happens with packages in nixpkgs older than
 [`25.05`](https://nixos.org/manual/nixos/stable/release-notes#sec-release-25.05).
 :::
 
-### Updating your system
+## Updating your system
 
 Every time the user updates their system, a "generation" is created alongside
 an entry for it in the boot loader. So if you want to boot into a previous
