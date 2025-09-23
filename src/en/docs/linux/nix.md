@@ -336,6 +336,11 @@ you need to run the garbage collector from time to time.
 sudo nix-collect-garbarge -d
 ```
 
+::: info `/nix/store`
+The **nix store** is where all packages, dev shells, configuration files, etc,
+built by nix are stored.
+:::
+
 ::: tip
 You can automate this process in NixOS through the `nix.gc` option
 
