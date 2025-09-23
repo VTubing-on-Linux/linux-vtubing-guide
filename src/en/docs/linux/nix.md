@@ -326,9 +326,10 @@ Build a qemu image so you can try it in a virtual machine
 Check the manpage `nixos-rebuild(8)` for more.
 ::::
 
-Saving previous generations will waste space in the nix store with older
-packages and libraries, so you need to run the garbage collector from time to
-time
+## Garbage collection
+
+In order to delete previous generations and free some space in the nix store,
+you need to run the garbage collector from time to time.
 
 ```sh
 # the -d flag means "Delete all old generations of profiles."
