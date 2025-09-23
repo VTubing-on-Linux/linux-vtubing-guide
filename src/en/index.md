@@ -25,9 +25,6 @@ features:
     details: Explore a variety of open-source software options for VTubing, from 2D to 3D applications.
 ---
 
-::: warning
-This guide is currently empty. 
-:::
 
 ::: warning
 🚧 This guide is currently under active development. Content may be incomplete or change frequently. 🚧
