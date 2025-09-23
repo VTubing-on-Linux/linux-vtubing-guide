@@ -133,10 +133,12 @@ stdenv.mkDerivation {
 
 :::
 
-If you want to see more examples, check out the
-[`nixpkgs`](https://github.com/NixOS/nixpkgs) repository, it contains a
+::: tip
+If you want to see actual nix packages, check out the
+[`nixpkgs`](https://github.com/NixOS/nixpkgs) repository. It contains a
 collection of over 120,000 applications packaged with nix, as well as the
 implementation of NixOS.
+:::
 
 ## Imperative x Declarative
 
