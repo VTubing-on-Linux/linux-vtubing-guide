@@ -8,7 +8,7 @@ If you're not quite sure how to contribute, you can check out this [github guide
 
 ## List of Contributors :
 - [KYLONEKO](https://kyloneko.net) - Original Author of the guide
-- [h-banii](https://x.com/h_banii) - Repo/vitepress setup + writing
+- [h-banii](https://x.com/h_banii) - Repo/vitepress setup + writing + NixOS
 - [hiimmilan](https://hiimmilan.dev) - Rewriting articles + tech jargon
 - barmy_brock - Suggesting layout
 
