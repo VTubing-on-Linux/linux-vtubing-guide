@@ -49,7 +49,8 @@ export default defineAdditionalConfig({
         text: "Miscellaneous",
         items: [
           { text: "Other useful software", link: "/docs/misc/other_software" },
-          { text: "Contributors", link: "/docs/misc/contributors" }
+          { text: "Contributors", link: "/docs/misc/contributors" },
+          { text: "VTubers on Linux", link: "/docs/linux/vtubers" }
         ],
       },
     ],

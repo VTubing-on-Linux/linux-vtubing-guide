@@ -1,5 +1,7 @@
 # VTubers on Linux
 
+Want to support VTubers who use Linux? Here is a list of VTubers who use Linux for their streaming setup, along with links to their social media and streaming platforms.
+
 <hr>
 
 <v-container v-for="vtuber in vtubers">
@@ -74,3 +76,6 @@ a {
   text-decoration: none;
 }
 </style>
+
+
+Missing something? Please let us know!
