@@ -66,7 +66,7 @@
 
 <script setup>
 import vtubers from "./data.json";
-const hostname = import.meta.env.DEV ? "localhost" : "github.io"
+const hostname = import.meta.env.DEV ? "localhost" : "vtubing-on-linux.github.io"
 </script>
 
 <style scoped>
