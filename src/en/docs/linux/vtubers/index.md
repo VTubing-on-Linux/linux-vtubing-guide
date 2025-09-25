@@ -4,6 +4,7 @@ Want to support VTubers who use Linux? Here is a list of VTubers who use Linux f
 
 <hr>
 
+<v-theme-provider :theme="isDark ? 'dark' : 'light'">
 <v-container v-for="vtuber in vtubers">
   <v-card
     title="MikanTheMink"
@@ -65,9 +66,13 @@ Want to support VTubers who use Linux? Here is a list of VTubers who use Linux f
     </template>
   </v-card>
 </v-container>
+</v-theme-provider>
 
 <script setup>
 import vtubers from "./data.json";
+import { useData } from 'vitepress';
+
+const { isDark } = useData();
 const hostname = import.meta.env.DEV ? "localhost" : "vtubing-on-linux.github.io"
 </script>
 
