@@ -23,4 +23,13 @@ export default defineConfig({
   },
 
   ignoreDeadLinks: true,
+
+  vite: {
+    ssr: {
+      noExternal: [
+        /\.css$/,
+        /^vuetify/,
+      ],
+    },
+  },
 });
