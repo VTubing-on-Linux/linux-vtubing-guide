@@ -14,12 +14,12 @@ platforms.
     class="rounded-lg"
     color="surface-variant"
   >
-    <template v-slot:prepend>
+    <template v-slot:prepend v-if="vtuber.avatar">
       <v-avatar>
         <v-img :src="vtuber.avatar"></v-img>
       </v-avatar>
     </template>
-    <template v-slot:append v-if="!!vtuber.distros">
+    <template v-slot:append v-if="vtuber.distros">
       <v-chip
         target="_blank"
         class="text-none pa-4"
@@ -29,11 +29,11 @@ platforms.
         {{distro.name }}
       </v-chip>
     </template>
-    <template v-slot:text>
-      <div v-if="!!vtuber.about" class="pb-3">
+    <template v-slot:text v-if="vtuber.about || vtuber.embeds">
+      <div v-if="vtuber.about" class="pb-3">
         {{vtuber.about}}
       </div>
-      <v-expansion-panels rounded="lg" variant="accordion" class="pt-3">
+      <v-expansion-panels rounded="lg" variant="accordion" class="pt-3" v-if="vtuber.embeds">
         <v-expansion-panel :title="`Watch on ${embed.platform}`" v-for="embed in vtuber.embeds">
           <v-expansion-panel-text>
             <iframe
@@ -56,7 +56,7 @@ platforms.
         </v-expansion-panel>
       </v-expansion-panels>
     </template>
-    <template v-slot:actions>
+    <template v-slot:actions v-if="vtuber.socials">
       <div class="flex-wrap">
         <v-btn class="text-none" v-for="social in vtuber.socials">
           <template v-slot:prepend>
