@@ -1,0 +1,55 @@
+[
+  {
+    "title": "MikanTheMink",
+    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/45f1b2a9-f282-4ba7-8d0c-6c6f6dd18893-profile_image-70x70.png",
+    "about": "☀️🌊🛥️I'm a mink girl with a big boat, join me on an adventure!!!!!!🐟🐟🐟",
+    "handles": {
+      "youtube": "MikanTheMink",
+      "twitch": "mikanthemink"
+    },
+    "distros": [
+      {
+        "name": "Tuxedo",
+        "url": "https://distrowatch.com/table.php?distribution=tuxedo"
+      }
+    ],
+    "fanarts": [
+      {
+        "artist": "h-banii",
+        "url": "https://media.discordapp.net/attachments/1385758535572258836/1403694241485688862/mikan-birthday.png?ex=68d5c962&is=68d477e2&hm=76c342a73823d6291738ebfdb64b1e3969342d2e9a42541db3b84e0eb1a8f031&=&format=webp&quality=lossless"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://player.twitch.tv/?channel=mikanthemink",
+        "platform": "Twitch"
+      },
+      {
+        "url": "https://www.youtube.com/embed/live_stream?channel=UCPHhxDsfdDXJAUETdYHcFsg",
+        "platform": "YouTube"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "mdi-twitch",
+        "handle": "mikanthemink",
+        "url": "https://www.twitch.tv/mikanthemink"
+      },
+      {
+        "icon": "mdi-youtube",
+        "handle": "MikanTheMink",
+        "url": "https://www.youtube.com/@MikanTheMink"
+      },
+      {
+        "icon": "mdi-twitter",
+        "handle": "MikanTheMink",
+        "url": "https://x.com/MikanTheMink"
+      },
+      {
+        "icon": "mdi-link",
+        "handle": "nonomiyamikan",
+        "url": "https://nonomiyamikan.carrd.co/"
+      }
+    ]
+  }
+]
