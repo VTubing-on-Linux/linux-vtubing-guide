@@ -16,7 +16,7 @@ export default defineConfig({
   themeConfig: {
     logo: "/logo.svg",
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/VTubing-on-Linux/linux-vtubing-guide" },
     ],
     search: {
       provider: "local",
