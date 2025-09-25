@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import vuetify from "vite-plugin-vuetify";
 
 export default defineConfig({
   srcDir: "src",
@@ -25,11 +26,9 @@ export default defineConfig({
   ignoreDeadLinks: true,
 
   vite: {
+    plugins: [vuetify()],
     ssr: {
-      noExternal: [
-        /\.css$/,
-        /^vuetify/,
-      ],
+      noExternal: [/\.css$/, /^vuetify/],
     },
   },
 });

@@ -4,15 +4,11 @@ import DefaultTheme from "vitepress/theme";
 import "./style.css";
 
 import "vuetify/styles";
-import * as components from "vuetify/components";
-import * as directives from "vuetify/directives";
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 import { mdiYoutube, mdiTwitch, mdiTwitter, mdiLink } from "@mdi/js";
 
 const vuetify = createVuetify({
-  components,
-  directives,
   theme: {
     defaultTheme: "system",
   },
