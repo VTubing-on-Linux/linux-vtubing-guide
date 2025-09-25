@@ -15,6 +15,7 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
+    "prod": "vitepress build && vitepress preview",
     "fmt": "prettier . --write"
   },
   "prettier": {
