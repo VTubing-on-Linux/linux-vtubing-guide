@@ -3,17 +3,31 @@ import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
 
-import "@mdi/font/css/materialdesignicons.css";
 import "vuetify/styles";
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 import { createVuetify } from "vuetify";
+import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
+import { mdiYoutube, mdiTwitch, mdiTwitter, mdiLink } from "@mdi/js";
 
 const vuetify = createVuetify({
   components,
   directives,
   theme: {
     defaultTheme: "system",
+  },
+  icons: {
+    defaultSet: "mdi",
+    aliases: {
+      ...aliases,
+      youtube: mdiYoutube,
+      twitch: mdiTwitch,
+      twitter: mdiTwitter,
+      link: mdiLink,
+    },
+    sets: {
+      mdi,
+    },
   },
 });
 

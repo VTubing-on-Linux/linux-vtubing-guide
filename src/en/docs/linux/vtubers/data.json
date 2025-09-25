@@ -31,22 +31,21 @@
     ],
     "socials": [
       {
-        "icon": "mdi-twitch",
+        "icon": "twitch",
         "handle": "mikanthemink",
         "url": "https://www.twitch.tv/mikanthemink"
       },
       {
-        "icon": "mdi-youtube",
+        "icon": "youtube",
         "handle": "MikanTheMink",
         "url": "https://www.youtube.com/@MikanTheMink"
       },
       {
-        "icon": "mdi-twitter",
+        "icon": "twitter",
         "handle": "MikanTheMink",
         "url": "https://x.com/MikanTheMink"
       },
       {
-        "icon": "mdi-link",
         "handle": "nonomiyamikan",
         "url": "https://nonomiyamikan.carrd.co/"
       }

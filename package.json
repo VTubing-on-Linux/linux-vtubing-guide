@@ -4,11 +4,11 @@
   "description": "Community maintained guide to VTubing on Linux",
   "license": "MIT",
   "devDependencies": {
-    "@mdi/font": "^7.4.47",
     "markdownlint-cli2": "^0.18.1",
     "prettier": "^3.6.2",
     "vitepress": "^2.0.0-alpha.12",
-    "vuetify": "^3.10.3"
+    "vuetify": "^3.10.3",
+    "@mdi/js": "^7.4.47"
   },
   "scripts": {
     "dev": "vitepress dev",

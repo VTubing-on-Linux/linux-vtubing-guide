@@ -55,8 +55,7 @@
       <div class="flex-wrap">
         <v-btn class="text-none" v-for="social in vtuber.socials">
           <template v-slot:prepend>
-            <v-icon v-if="social.icon">{{ social.icon }}</v-icon>
-            <v-icon v-else>{{ `mdi-${social.name.toLowerCase()}` }}</v-icon>
+            <v-icon>{{ "$" + `${social.icon ?? 'link'}` }}</v-icon>
           </template>
           {{social.handle}}
         </v-btn>
