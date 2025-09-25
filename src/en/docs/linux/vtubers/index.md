@@ -1,6 +1,8 @@
 # VTubers on Linux
 
-Want to support VTubers who use Linux? Here is a list of VTubers who use Linux for their streaming setup, along with links to their social media and streaming platforms.
+Want to support VTubers who use Linux? Here is a list of VTubers who use Linux
+for their streaming setup, along with links to their social media and streaming
+platforms.
 
 <hr>
 
@@ -82,5 +84,7 @@ a {
 }
 </style>
 
-
-Missing something? Please let us know!
+::: info Missing something? Please let us know!
+Open an [issue](https://github.com/VTubing-on-Linux/linux-vtubing-guide/issues)
+or start a new [discussion](https://github.com/VTubing-on-Linux/linux-vtubing-guide/discussions)
+:::
