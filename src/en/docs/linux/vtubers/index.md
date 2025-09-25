@@ -58,7 +58,12 @@ platforms.
     </template>
     <template v-slot:actions v-if="vtuber.socials">
       <div class="flex-wrap">
-        <v-btn class="text-none" v-for="social in vtuber.socials">
+        <v-btn
+          class="text-none"
+          v-for="social in vtuber.socials"
+          :href="social.url"
+          target="_blank"
+        >
           <template v-slot:prepend>
             <v-icon>{{ "$" + `${social.icon ?? 'link'}` }}</v-icon>
           </template>
