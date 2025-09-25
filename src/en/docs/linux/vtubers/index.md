@@ -7,7 +7,7 @@ Want to support VTubers who use Linux? Here is a list of VTubers who use Linux f
 <v-theme-provider :theme="isDark ? 'dark' : 'light'">
 <v-container v-for="vtuber in vtubers">
   <v-card
-    title="MikanTheMink"
+    :title="vtuber.title"
     variant="outlined"
     class="rounded-lg"
     color="surface-variant"
