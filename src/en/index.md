@@ -12,9 +12,9 @@ hero:
     - theme: brand
       text: Introduction
       link: /docs/docs
- #   - theme: alt
- #     text: Markdown Examples
- #     link: /examples/markdown-examples
+    - theme: alt
+      text: VTubers on Linux
+      link: /docs/linux/vtubers
 
 features:
   - title: Learn how to VTube on Linux
