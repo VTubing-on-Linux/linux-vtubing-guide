@@ -1,0 +1,57 @@
+name: Add Linux VTuber
+description: If you want to add a VTuber to our list, use this template
+title: "[Linux VTuber]: YOUR NAME HERE"
+labels: "linux-vtuber"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this form to be featured on the website.
+
+        The only required field is your VTuber name, all the other fields are optional.
+
+        Don't forget to change this issue's title.
+  - type: input
+    attributes:
+      label: Name
+      description: "What's your VTuber name?"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Profile picture
+      description: "URL to your profile picture (preferably square)."
+  - type: input
+    attributes:
+      label: Description
+      description: "Short description about yourself."
+  - type: input
+    attributes:
+      label: Linux distribution
+      description: "Your main Linux distro."
+  - type: textarea
+    attributes:
+      label: Channels where you livestream / make content
+      description: |
+        Links to your YouTube, Twitch, or other streamming websites.
+  - type: textarea
+    attributes:
+      label: Social medias
+      description: |
+        Links to your other social medias, like Twitter, Fediverse, Linktree, etc.
+  - type: textarea
+    attributes:
+      label: Fanarts
+      description: |
+        Links to fanarts of your VTuber model made by you or your fans.
+  - type: checkboxes
+    attributes:
+      label: Permissions
+      description: |
+        By submitting this issue, you're aware that the information provided
+        here will be publicly available for anyone to see.
+
+        Please check the boxes below.
+      options:
+        - label: I allow this information to be used on the website.
+          required: true
