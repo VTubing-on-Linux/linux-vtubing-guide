@@ -10,15 +10,17 @@ const props = frontmatter.value.hero.carousel;
 const currentIndex = ref(props?.cycle?.random ? randomIndex() : 0);
 let slideInterval = -1;
 
-function randomIndex(perviousIndex) {
-  const length = (props.images?.length ?? 1) - 1;
+function randomIndex(length = props.images?.length) {
+  return ~~(Math.random() * length);
+}
 
+function randomUnrepeatedIndex(previousIndex, length = props.images?.length) {
   if (length == 0) {
     return 0;
   }
 
-  const index = ~~(Math.random() * length);
-  return index >= perviousIndex ? index + 1 : index;
+  const index = randomIndex(length - 1);
+  return index >= previousIndex ? index + 1 : index;
 }
 
 function clampIndex(index) {
@@ -30,7 +32,7 @@ function startInterval() {
 
   slideInterval = window.setInterval(() => {
     currentIndex.value = props.cycle.random
-      ? randomIndex(currentIndex.value)
+      ? randomUnrepeatedIndex(currentIndex.value)
       : clampIndex(currentIndex.value + 1);
   }, Number(props.cycle.duration));
 }
