@@ -3,7 +3,7 @@ import { VPImage } from "vitepress/theme";
 import { useData } from "vitepress";
 import { onMounted, onUnmounted, ref } from "vue";
 
-const { frontmatter } = useData();
+const { frontmatter, isDark } = useData();
 
 const props = frontmatter.value.hero.carousel;
 
@@ -46,19 +46,21 @@ onUnmounted(clearInterval);
 </script>
 
 <template>
-  <div v-if="props">
-    <v-carousel
-      v-model="currentIndex"
-      class="image-src"
-      height="100%"
-      hide-delimiters
-      :show-arrows="props?.['show-arrows']"
-      :crossfade="props?.cycle?.transition?.type == 'crossfade'"
-      :transition-duration="props?.cycle?.transition?.duration"
-    >
-      <v-carousel-item v-for="image in props.images">
-        <VPImage class="image-src" :image></VPImage>
-      </v-carousel-item>
-    </v-carousel>
-  </div>
+  <ClientOnly v-if="props">
+    <v-theme-provider :theme="isDark ? 'dark' : 'light'">
+      <v-carousel
+        v-model="currentIndex"
+        class="image-src"
+        height="100%"
+        hide-delimiters
+        :show-arrows="props?.['show-arrows']"
+        :crossfade="props?.cycle?.transition?.type == 'crossfade'"
+        :transition-duration="props?.cycle?.transition?.duration"
+      >
+        <v-carousel-item v-for="(image, index) in props.images" :key="index">
+          <VPImage class="image-src" :image :key="currentIndex"></VPImage>
+        </v-carousel-item>
+      </v-carousel>
+    </v-theme-provider>
+  </ClientOnly>
 </template>
