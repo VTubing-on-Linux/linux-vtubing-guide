@@ -7,7 +7,8 @@ import "vuetify/styles";
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 import { mdiYoutube, mdiTwitch, mdiTwitter, mdiLink } from "@mdi/js";
-import { HomeHeroImage } from "./components";
+import HomeHeroImage from "./components/HomeHeroImage.vue";
+import VTuberCard from "./components/VTuberCard.vue";
 
 const vuetify = createVuetify({
   theme: {
@@ -37,5 +38,6 @@ export default {
   },
   enhanceApp({ app }) {
     app.use(vuetify);
+    app.component("VTuberCard", VTuberCard);
   },
 } satisfies Theme;
