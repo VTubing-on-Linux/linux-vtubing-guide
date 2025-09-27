@@ -6,7 +6,7 @@ hero:
   name: "Linux VTubing Guide"
   tagline: "Community maintained guide to VTubing on Linux"
   image:
-    src: /logo.svg
+    src: transparent.svg
     alt: "Linux VTubing Guide"
   actions:
     - theme: brand
@@ -26,6 +26,20 @@ features:
 ---
 
 
+<script>
+    // TODO: I'm not a JS dev anymore, so please rewrite this in a better way
+    function waitForHeroImage() {
+      const heroImage = document.querySelector('.VPImage.image-src');
+      if (heroImage) {
+        const randomNum = Math.floor(Math.random() * 3) + 1; 
+        heroImage.src = `/linux-vtubing-guide/logo-${randomNum}.svg`;
+        console.log(`Hero image set to logo-${randomNum}.svg`);
+      } else {
+        setTimeout(waitForHeroImage, 100);
+      }
+    }
+    waitForHeroImage();
+</script>
+
 ::: warning
-🚧 This guide is currently under active development. Content may be incomplete or change frequently. 🚧
-:::
+🚧 This guide is currently under active development. Content may be incomplete or change frequently. 🚧 :::
