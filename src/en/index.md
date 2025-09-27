@@ -14,6 +14,7 @@ hero:
       ]
     show-arrows: hover
     cycle:
+      random: true
       duration: 4000
       transition:
         type: crossfade
