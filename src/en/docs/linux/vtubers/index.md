@@ -6,6 +6,7 @@ platforms.
 
 <hr>
 
+<ClientOnly>
 <v-theme-provider :theme="isDark ? 'dark' : 'light'">
 <v-container v-for="vtuber in vtubers">
   <v-card
@@ -74,6 +75,7 @@ platforms.
   </v-card>
 </v-container>
 </v-theme-provider>
+</ClientOnly>
 
 <script setup>
 import vtubers from "./data.json";
