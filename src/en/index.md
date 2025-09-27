@@ -5,9 +5,19 @@ layout: home
 hero:
   name: "Linux VTubing Guide"
   tagline: "Community maintained guide to VTubing on Linux"
-  image:
-    src: transparent.svg
-    alt: "Linux VTubing Guide"
+  carousel:
+    images:
+      [
+        { src: "/logo-1.svg", alt: "Linux VTubing Guide - logo 1" },
+        { src: "/logo-2.svg", alt: "Linux VTubing Guide - logo 2" },
+        { src: "/logo-3.svg", alt: "Linux VTubing Guide - logo 3" },
+      ]
+    show-arrows: hover
+    cycle:
+      duration: 4000
+      transition:
+        type: crossfade
+        duration: 2000
   actions:
     - theme: brand
       text: Introduction
@@ -24,27 +34,6 @@ features:
   - title: Discover open-source tools
     details: Explore a variety of open-source software options for VTubing, from 2D to 3D applications.
 ---
-
-<script setup>
-import { onMounted } from 'vue'
-
-onMounted(() => {
-  // TODO: I'm not a JS dev anymore, so please rewrite this in a better way
-    function waitForHeroImage() {
-      const heroImage = document.querySelector('.VPImage.image-src');
-      if (heroImage) {
-        const randomNum = Math.floor(Math.random() * 3) + 1; 
-        heroImage.src = `/linux-vtubing-guide/logo-${randomNum}.svg`;
-        console.log(`Hero image set to logo-${randomNum}.svg`);
-      } else {
-        setTimeout(waitForHeroImage, 100);
-      }
-    }
-    waitForHeroImage();
-})
-</script>
-
-
 
 ::: warning
 🚧 This guide is currently under active development. Content may be incomplete or change frequently. 🚧 :::
