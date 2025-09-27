@@ -25,9 +25,11 @@ features:
     details: Explore a variety of open-source software options for VTubing, from 2D to 3D applications.
 ---
 
+<script setup>
+import { onMounted } from 'vue'
 
-<script>
-    // TODO: I'm not a JS dev anymore, so please rewrite this in a better way
+onMounted(() => {
+  // TODO: I'm not a JS dev anymore, so please rewrite this in a better way
     function waitForHeroImage() {
       const heroImage = document.querySelector('.VPImage.image-src');
       if (heroImage) {
@@ -39,7 +41,10 @@ features:
       }
     }
     waitForHeroImage();
+})
 </script>
+
+
 
 ::: warning
 🚧 This guide is currently under active development. Content may be incomplete or change frequently. 🚧 :::
