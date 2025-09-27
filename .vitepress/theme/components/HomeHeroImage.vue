@@ -7,23 +7,30 @@ const { frontmatter } = useData();
 
 const props = frontmatter.value.hero.carousel;
 
-function randomIndex() {
-  return ~~(Math.random() * (props.images?.length ?? 1));
+const currentIndex = ref(props?.cycle?.random ? randomIndex() : 0);
+let slideInterval = -1;
+
+function randomIndex(perviousIndex) {
+  const length = (props.images?.length ?? 1) - 1;
+
+  if (length == 0) {
+    return 0;
+  }
+
+  const index = ~~(Math.random() * length);
+  return index >= perviousIndex ? index + 1 : index;
 }
 
 function clampIndex(index) {
   return index % (props.images?.length ?? 1);
 }
 
-const currentIndex = ref(props?.cycle?.random ? randomIndex() : 0);
-let slideInterval = -1;
-
 function startInterval() {
   if (!props.cycle) return;
 
   slideInterval = window.setInterval(() => {
     currentIndex.value = props.cycle.random
-      ? randomIndex()
+      ? randomIndex(currentIndex.value)
       : clampIndex(currentIndex.value + 1);
   }, Number(props.cycle.duration));
 }
