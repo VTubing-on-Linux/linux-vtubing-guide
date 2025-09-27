@@ -7,6 +7,7 @@ import "vuetify/styles";
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi-svg";
 import { mdiYoutube, mdiTwitch, mdiTwitter, mdiLink } from "@mdi/js";
+import { HomeHeroImage } from "./components";
 
 const vuetify = createVuetify({
   theme: {
@@ -31,7 +32,7 @@ export default {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+      "home-hero-image": () => h(HomeHeroImage),
     });
   },
   enhanceApp({ app }) {
