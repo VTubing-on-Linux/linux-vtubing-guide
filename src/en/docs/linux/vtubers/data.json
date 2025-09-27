@@ -9,12 +9,6 @@
         "url": "https://distrowatch.com/table.php?distribution=tuxedo"
       }
     ],
-    "fanarts": [
-      {
-        "artist": "h-banii",
-        "url": "https://media.discordapp.net/attachments/1385758535572258836/1403694241485688862/mikan-birthday.png?ex=68d5c962&is=68d477e2&hm=76c342a73823d6291738ebfdb64b1e3969342d2e9a42541db3b84e0eb1a8f031&=&format=webp&quality=lossless"
-      }
-    ],
     "embeds": [
       {
         "url": "https://player.twitch.tv/?channel=mikanthemink",
@@ -23,6 +17,12 @@
       {
         "url": "https://www.youtube.com/embed/live_stream?channel=UCPHhxDsfdDXJAUETdYHcFsg",
         "platform": "YouTube"
+      }
+    ],
+    "fanarts": [
+      {
+        "artist": "h-banii",
+        "url": "https://github.com/user-attachments/assets/77105faa-22ee-4eaa-a895-f4d52e775318"
       }
     ],
     "socials": [
