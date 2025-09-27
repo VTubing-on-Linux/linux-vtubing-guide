@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": ["vite/client"],
+    "paths": {
+      "@/*": ["./.vitepress/*"],
+      "vite": ["./node_modules/vite"]
+    }
+  },
+  "include": [
+    ".vitepress/**/*.vue",
+    ".vitepress/**/*.ts",
+    "src/**/*.vue",
+    "src/**/*.ts"
+  ],
+  "exclude": ["**/node_modules/**", "**/dist/**", "**/cache/**"],
+  "extensions": [".js", ".ts", ".vue"]
+}
