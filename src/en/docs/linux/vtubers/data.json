@@ -46,5 +46,43 @@
         "url": "https://nonomiyamikan.carrd.co/"
       }
     ]
+  },
+   {
+    "title": "KYLONEKO",
+    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/744fb5ed-1a56-4c05-ad25-9ca98c9a0174-profile_image-70x70.png",
+    "about": "I stream a Variety of games From Monster Hunter to Phantasy star online and much much more! , I also speed run megaman x on occasion as well, And I use LINUX for everything!!!",
+    "distros": [
+      {
+        "name": "PikaOS",
+        "url": "https://distrowatch.com/table.php?distribution=pikaos"
+      },
+      {
+        "name": "Linux Mint",
+        "url": "https://distrowatch.com/table.php?distribution=mint"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://player.twitch.tv/?channel=kyloneko",
+        "platform": "Twitch"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "twitch",
+        "handle": "kyloneko",
+        "url": "https://www.twitch.tv/kyloneko"
+      },
+      {
+        "icon": "youtube",
+        "handle": "KYLONEKO",
+        "url": "https://www.youtube.com/@KYLONEKO"
+      },
+      {
+        "_icon": "bluesky",
+        "handle": "BlueSky",
+        "url": "https://bsky.app/profile/kyloneko.net"
+      }
+    ]
   }
 ]
