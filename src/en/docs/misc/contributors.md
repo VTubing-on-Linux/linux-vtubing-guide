@@ -7,7 +7,7 @@ If you're not quite sure how to contribute, you can check out this [github guide
 **This guide was based upon KYLONEKO's guide under CC-BY-NC-SA 4.0 License.** Original guide can be obtained [here](https://codeberg.org/KyloNeko/Linux-Guide-to-Vtubing)
 
 ## List of Contributors :
-- [KYLONEKO](https://kyloneko.net) - Original Author of the guide
+- [KYLONEKO](https://kyloneko.net) - Original Author of the guide + Drawings of Mikan and Kyloneko logo on the homepage
 - [h-banii](https://x.com/h_banii) - Repo/vitepress setup + writing + NixOS
 - [hiimmilan](https://hiimmilan.dev) - Rewriting articles + tech jargon
 - barmy_brock - Suggesting layout

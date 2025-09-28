@@ -8,9 +8,8 @@ hero:
   carousel:
     images:
       [
-        { src: "/logo-1.svg", alt: "Linux VTubing Guide - logo 1" },
-        { src: "/logo-2.svg", alt: "Linux VTubing Guide - logo 2" },
-        { src: "/logo-3.svg", alt: "Linux VTubing Guide - logo 3" },
+        { src: "/mikanlinux.png", alt: "Mikan the Mink - Drawn by KYLONEKO" },
+        { src: "/kylonekolinux.png", alt: "Kyloneko - Drawn by KYLONEKO" },
       ]
     show-arrows: hover
     cycle:
