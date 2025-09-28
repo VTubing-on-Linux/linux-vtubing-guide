@@ -10,6 +10,7 @@ hero:
       [
         { src: "/mikanlinux.png", alt: "Mikan the Mink - Drawn by KYLONEKO" },
         { src: "/kylonekolinux.png", alt: "Kyloneko - Drawn by KYLONEKO" },
+        { src: "/venilinux.png", alt: "Venituber - Drawn by KYLONEKO" },
       ]
     show-arrows: hover
     cycle:
