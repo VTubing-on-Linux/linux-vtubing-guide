@@ -65,9 +65,17 @@
       {
         "url": "https://player.twitch.tv/?channel=kyloneko",
         "platform": "Twitch"
+      },
+      {
+        "url": "https://www.youtube.com/embed/live_stream?channel=UC9U1ZyTXsEwc38DY_wlieSA",
+        "platform": "YouTube"
       }
     ],
     "socials": [
+      {
+        "handle": "Linktree",
+        "url": "https://linktr.ee/kyloneko"
+      },
       {
         "icon": "twitch",
         "handle": "kyloneko",
@@ -82,6 +90,21 @@
         "_icon": "bluesky",
         "handle": "BlueSky",
         "url": "https://bsky.app/profile/kyloneko.net"
+      },
+      {
+        "_icon": "mastodon",
+        "handle": "KYLONEKO", 
+        "url": "https://vt.social/@KyloNeko"
+      },
+      {
+        "icon": "twitter",
+        "handle": "KYLONEKO",
+        "url": "https://x.com/KyloNek0"
+      },
+      {
+        "_icon": "codeberg",
+        "handle": "KyloNeko",
+        "url": "https://codeberg.org/KyloNeko"
       }
     ]
   }
