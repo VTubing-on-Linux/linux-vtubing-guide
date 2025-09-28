@@ -6,9 +6,8 @@ export default defineAdditionalConfig({
   themeConfig: {
     nav: [
       { text: "Introduction", link: "/docs/docs" },
-      { text: "Installation", link: "/docs/installation" },
-      { text: "OBS", link: "/docs/obs" },
-      { text: "3D VTubing", link: "/docs/3d_vtubing" },
+      { text: "Installation", link: "/docs/linux/installation" },
+      { text: "OBS", link: "/docs/streaming/obs" },
     ],
 
     sidebar: [
@@ -24,7 +23,7 @@ export default defineAdditionalConfig({
         text: "Linux",
         items: [
           { text: "Installation", link: "/docs/linux/installation" },
-          { text: "Running windows software", link: "/docs/linux/running_windows_software" },
+          { text: "Running windows software", link: "/docs/linux/running_win_software" },
           { text: "Wayland vs. X11", link: "/docs/linux/wayland_vs_xorg" },
           { text: "NixOS", link: "/docs/linux/nix" },
           { text: "VTubers on Linux", link: "/docs/linux/vtubers" }
