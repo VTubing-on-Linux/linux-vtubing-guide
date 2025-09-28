@@ -9,10 +9,15 @@ Many popular VTubing applications / games are Windows-only. However, there are s
 
 ## Install Steam & Proton/GE-Proton
 
-Valve Proton is essential for running many Windows-only VTubing applications on Linux. After installing Steam from your package manager, download [VTube Studio](https://store.steampowered.com/app/1325860/VTube_Studio/) or any other VTubing software you need. Then go to **Settings -> Compatibility** and enable Steam Play for all titles. Restart Steam when prompted to apply the changes. Steam will now automatically use Proton to run Windows games and applications.
+Valve Proton is essential for running many Windows-only games and VTubing applications on Linux. After installing Steam from your package manager, download [VTube Studio](https://store.steampowered.com/app/1325860/VTube_Studio/) or any other VTubing software you need. Then go to **Settings -> Compatibility** and enable Steam Play for all titles. Restart Steam when prompted to apply the changes. Steam will now automatically use Proton to run Windows games and applications.
 
 Proton-GE is a community-made version of Proton that includes additional patches and improvements for better compatibility with certain applications. It is recommended to use Proton-GE for VTubing software, as it often provides better performance and compatibility than the default Proton version. To install Proton-GE, download the ProtonUp-Qt app and run it. The app will give you a menu for what version to download and where to install it to. 
 
 ::: tip
 As the writing of this guide, GE-Proton9-11 works the best. This is however subject to change.
 :::
+
+
+![l2dc_viewer](/l2dc_viewer.png)
+
+*Live2D Cubism Viewer running under Debian 13 with Proton*
