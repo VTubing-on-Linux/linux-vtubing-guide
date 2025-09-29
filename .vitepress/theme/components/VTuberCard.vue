@@ -53,15 +53,17 @@ defineProps<{
           </v-avatar>
         </template>
         <template v-slot:append v-if="distros">
-          <v-chip
-            target="_blank"
-            class="text-none pa-4"
-            :href="distro.url"
-            :key="distro.name"
-            v-for="distro in distros"
-          >
-            {{ distro.name }}
-          </v-chip>
+          <v-chip-group>
+            <v-chip
+              target="_blank"
+              class="text-none pa-4"
+              :href="distro.url"
+              :key="distro.name"
+              v-for="distro in distros"
+            >
+              {{ distro.name }}
+            </v-chip>
+          </v-chip-group>
         </template>
         <template v-slot:text v-if="about || embeds">
           <div v-if="about" class="pb-3">
