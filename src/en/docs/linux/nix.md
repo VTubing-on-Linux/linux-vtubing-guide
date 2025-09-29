@@ -303,21 +303,16 @@ nix-collect-garbarge
 versions of the same library and co-exist in the nix store without affecting
 one another.
 
-## Installing packages
-
-It's easy to select older or bleeding edge version of packages simply by
-changing the nixpkgs revision.
-
-So if an update broke a certain package, you can simply rollback that package
-to use an older revision of nixpkgs.
+You can even mix stable and unstable packages by using differente nixpkgs
+revisions, like `nixos-unstable` and `25.05` (stable).
 
 ```nix
-{ pkgs, older-nixpkgs, bleeding-edge-nixpkgs, minkpkgs, ... }: let
+{ pkgs, nixpkgs-stable, nixpkgs-unstable, minkpkgs, ... }: let
     inherit (pkgs.stdenv.hostPlatform) system;
 
-    olderPkgs = older-nixpkgs.legacyPackages.${system};
+    stablePkgs = nixpkgs-stable.legacyPackages.${system};
 
-    newerPkgs = bleeding-edge-nixpkgs.legacyPackages.${system};
+    unstablePkgs = nixpkgs-unstable.legacyPackages.${system};
 
     # You can get packages from repositories other than nixpkgs
     #
@@ -332,10 +327,10 @@ in {
         pkgs.firefox
 
         # Use obs-studio from an older revision of nixpkgs
-        olderPkgs.obs-studio
+        stablePkgs.obs-studio
 
         # Use nvim from a newer revision of nixpkgs
-        newerPkgs.nvim
+        unstablePkgs.nvim
 
         # use clip-studio-paint from minkpkgs
         mink.clip-studio-paint-v1
@@ -349,6 +344,11 @@ Note that
 doesn't have the meaning you're probably thinking, it's just the name of the
 output used to expose packages in a way that avoids checks. It has nothing to
 do with the age of the packages.
+:::
+
+::: warning
+It's technically possible to install packages imperatively with `nix-env`,
+however it's **highly** disencouraged.
 :::
 
 ::: details Stable x Rolling Release
