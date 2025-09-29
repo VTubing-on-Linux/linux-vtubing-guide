@@ -47,7 +47,7 @@
       }
     ]
   },
-   {
+  {
     "title": "KYLONEKO",
     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/744fb5ed-1a56-4c05-ad25-9ca98c9a0174-profile_image-70x70.png",
     "about": "I stream a Variety of games From Monster Hunter to Phantasy star online and much much more! , I also speed run megaman x on occasion as well, And I use LINUX for everything!!!",
@@ -87,13 +87,13 @@
         "url": "https://www.youtube.com/@KYLONEKO"
       },
       {
-        "_icon": "bluesky",
+        "icon": "bluesky",
         "handle": "BlueSky",
         "url": "https://bsky.app/profile/kyloneko.net"
       },
       {
-        "_icon": "mastodon",
-        "handle": "KYLONEKO", 
+        "icon": "mastodon",
+        "handle": "KYLONEKO",
         "url": "https://vt.social/@KyloNeko"
       },
       {
@@ -102,7 +102,7 @@
         "url": "https://x.com/KyloNek0"
       },
       {
-        "_icon": "codeberg",
+        "icon": "git",
         "handle": "KyloNeko",
         "url": "https://codeberg.org/KyloNeko"
       }
