@@ -25,7 +25,7 @@ export default defineAdditionalConfig({
           { text: "Installation", link: "/docs/linux/installation" },
           { text: "Running windows software", link: "/docs/linux/running_win_software" },
           { text: "Wayland vs. X11", link: "/docs/linux/wayland_vs_xorg" },
-          { text: "NixOS", link: "/docs/linux/nix" },
+          { text: "NixOS", link: "/docs/linux/nixos" },
         ],
       },
       {
