@@ -18,6 +18,10 @@ It comes without saying that NixOS is not meant for regular users, but there's
 nothing stopping you from trying!
 :::
 
+::: info
+This guide assumes [flakes](#Flakes) are enabled.
+:::
+
 :::: details Reusability on multiple machines
 To avoid repetition and increase reusability of nix files when configuring
 multiple machines, I highly recommend implementing your nix settings through a
