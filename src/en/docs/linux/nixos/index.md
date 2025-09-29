@@ -102,110 +102,7 @@ and the default options. This is especially helpful when there are breaking
 changes to NixOS default options, so you can just fix your module instead of
 fixing ALL of your machines' configurations.
 
-That way you can import your module as an input and enable the options you need
-for each machine:
-
-::: code-group
-
-```nix [module.nix]
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}:
-let
-  cfg = config.my-options;
-  inherit (lib) mkEnableOption mkMerge mkIf;
-in
-{
-  imports = [
-    # You can also import options from other files to have a multi-file module
-  ];
-
-  options.my-options = {
-    obs.enable = mkEnableOption "OBS with my favorite plugins";
-    gaming.enable = mkEnableOption "gaming related software and quirks";
-    neovim.enable = mkEnableOption "neovim and make it the default editor";
-  };
-
-  config = mkMerge [
-    (mkIf cfg.obs.enable {
-      programs.obgs = {
-        enable = true;
-      };
-    })
-    (mkIf cfg.gaming.enable {
-      programs.steam = {
-        enable = true;
-      };
-
-      environment.systemPackages = with pkgs; [
-        lutris
-        heroic
-        umu-launcher
-        osu-lazer-bin
-      ];
-    })
-    (mkIf cfg.neovim.enable {
-      programs.neovim = {
-        enable = true;
-        defaultEditor = true;
-      };
-    })
-  ];
-}
-```
-
-```nix [Machine A]
-# Suppose this is my streaming machine
-
-imports = [
-  ./my-module.nix # module where `my-module-options` is defined
-];
-
-my-options = {
-  obs.enable = true;      # installs OBS with all my plugins
-  gaming.enable = true;   # installs steam, wine, etc.
-  neovim.enable = true;
-};
-
-# Some hardware-specific configuration
-hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
-```
-
-```nix [Machine B]
-# Suppose this is my potato laptop
-
-imports = [
-  ./my-module.nix
-];
-
-my-options = {
-  # We don't need gaming options nor OBS in this machine, enable just neovim
-  neovim.enable = true;
-};
-
-# Some hardware-specific configuration hardware.graphics.extraPackages = with
-hardware.graphics.extraPackages = with pkgs; [ mesa.opencl ];
-```
-
-:::
-
-Note that you don't necessarily need to use modules to get the same kind of
-modularity, you could technically have your raw configuration on separate files
-and import it on the machines in which you need them enabled.
-
-```nix
-imports = [
-  ./obs.nix
-  ./streaming.nix
-  ./neovim.nix
-];
-```
-
-The module approach is better because you only need to import it once.
-
+See [#Modules](#Modules) for an example.
 ::::
 
 ::: tip
@@ -483,9 +380,120 @@ also select a specific input to update: `nix flake update minkpkgs`.
 
 ## Modules
 
-::: warning
-Under construction!
+You can make your own options with nix modules. See the following example.
+
+::: code-group
+
+```nix [module.nix]
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+let
+  cfg = config.my-options;
+  inherit (lib) mkEnableOption mkMerge mkIf;
+in
+{
+  imports = [
+    # You can also import options from other files to have a multi-file module
+  ];
+
+  options.my-options = {
+    obs.enable = mkEnableOption "OBS with my favorite plugins";
+    gaming.enable = mkEnableOption "gaming related software and quirks";
+    neovim.enable = mkEnableOption "neovim and make it the default editor";
+  };
+
+  config = mkMerge [
+    (mkIf cfg.obs.enable {
+      programs.obgs = {
+        enable = true;
+      };
+    })
+    (mkIf cfg.gaming.enable {
+      programs.steam = {
+        enable = true;
+      };
+
+      environment.systemPackages = with pkgs; [
+        lutris
+        heroic
+        umu-launcher
+        osu-lazer-bin
+      ];
+    })
+    (mkIf cfg.neovim.enable {
+      programs.neovim = {
+        enable = true;
+        defaultEditor = true;
+      };
+    })
+  ];
+}
+```
+
+```nix [Machine A]
+# Suppose this is my streaming machine
+
+imports = [
+  ./my-module.nix # module where `my-module-options` is defined
+];
+
+my-options = {
+  obs.enable = true;      # installs OBS with all my plugins
+  gaming.enable = true;   # installs steam, wine, etc.
+  neovim.enable = true;
+};
+
+# Some hardware-specific configuration
+hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
+```
+
+```nix [Machine B]
+# Suppose this is my potato laptop
+
+imports = [
+  ./my-module.nix
+];
+
+my-options = {
+  # We don't need gaming options nor OBS in this machine, enable just neovim
+  neovim.enable = true;
+};
+
+# Some hardware-specific configuration hardware.graphics.extraPackages = with
+hardware.graphics.extraPackages = with pkgs; [ mesa.opencl ];
+```
+
 :::
+
+Note that you don't necessarily need to use modules to get the same kind of
+modularity, you could technically have your raw configuration on separate files
+and import it on the machines in which you need them enabled.
+
+```nix
+imports = [
+  ./obs.nix
+  ./streaming.nix
+  ./neovim.nix
+];
+```
+
+The module approach is better because you only need to import it once and it
+allows you to alert users about breaking changes (in case you share your custom
+module with other people).
+
+```nix
+imports =
+  mkRenamedOptionModule
+    [ "my-options" "neovim" "deprecatedOption" ]
+    [ "my-options" "neovim" "newOptionName" ];
+```
+
+In the example above, if a user tries to use `deprecatedOption`, it'll still
+work but with a warning about it being renamed to `newOptionName`.
 
 ## Home Manager
 
