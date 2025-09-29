@@ -22,58 +22,6 @@ nothing stopping you from trying!
 This guide assumes [flakes](#Flakes) are enabled.
 :::
 
-:::: details Reusability on multiple machines
-To avoid repetition and increase reusability of nix files when configuring
-multiple machines, I highly recommend implementing your nix settings through a
-module.
-
-That way you can import your module as an input across different machine
-configurations and simply enable the options you need for each machine:
-
-::: info Machine A
-
-```nix
-imports = [
-    my-custom-module # module where `my-custom-option` is defined
-];
-
-# Suppose this is my streaming machine
-
-# So let's enable OBS with all my plugins pre-configured in the module
-my-custom-option.obs-with-all-my-plugins.enable = true;
-
-# And enable gaming options (installs steam, wine, etc)
-my-custom-option.gaming.enable = true;
-
-# Some hardware-specific configuration
-hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
-```
-
-:::
-
-::: info Machine B
-
-```nix
-imports = [
-    my-custom-module
-];
-
-# Suppose this is my potato laptop
-
-# We don't need these programs in this potato
-my-custom-option.obs-with-all-my-plugins.enable = false;
-my-custom-option.gaming.enable = false;
-
-# Some hardware-specific configuration
-hardware.graphics.extraPackages = with pkgs; [
-    mesa.opencl
-];
-```
-
-:::
-
-::::
-
 ## Reproducible
 
 All packages are built in isolation from each other and have their dependencies
@@ -137,11 +85,145 @@ stdenv.mkDerivation {
 
 :::
 
+:::: details Reusability on multiple machines
+You technically can't just "copy your configuration files to another machine"
+and expect it to work unless the machines have **identical hardware**.
+
+Also, most of the time you wouldn't want them to be the exact same. For
+example, if you have a desktop computer for gaming and a potato laptop for
+studying, it wouldn't make sense to install the same gaming-related software on
+the potato laptop (in most cases). The configuration has to be different.
+
+To avoid that kind of problem, I highly recommend implementing your nix
+settings through a [module](#Modules). So instead of just enabling NixOS'
+default options directly, you should create your own custom module with your
+custom options that acts as a layer of abstraction between your configuration
+and the default options. This is especially helpful when there are breaking
+changes to NixOS default options, so you can just fix your module instead of
+fixing ALL of your machines' configurations.
+
+That way you can import your module as an input and enable the options you need
+for each machine:
+
+::: info Module
+
+```nix
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
+let
+  cfg = config.my-options;
+  inherit (lib) mkEnableOption mkMerge mkIf;
+in
+{
+  imports = [
+    # You can also import options from other files to have a multi-file module
+  ];
+
+  options.my-options = {
+    obs.enable = mkEnableOption "OBS with my favorite plugins";
+    gaming.enable = mkEnableOption "gaming related software and quirks";
+    neovim.enable = mkEnableOption "neovim and make it the default editor";
+  };
+
+  config = mkMerge [
+    (mkIf cfg.obs.enable {
+        programs.obgs = {
+            enable = true;
+        };
+    })
+    (mkIf cfg.gaming.enable {
+        programs.steam = {
+            enable = true;
+        };
+
+      environment.systemPackages = with pkgs; [
+          lutris
+           heroic
+            umu-launcher
+            osu-lazer-bin
+      ];
+    })
+    (mkIf cfg.neovim.enable {
+        programs.neovim = {
+            enable = true;
+            defaultEditor = true;
+        };
+    })
+  ];
+}
+```
+
+:::
+
+::: info Machine A
+
+```nix
+# Suppose this is my streaming machine
+
+imports = [
+    my-module # module where `my-module-options` is defined
+];
+
+my-module-options = {
+    obs.enable = true;      # installs OBS with all my plugins
+    gaming.enable = true;   # installs steam, wine, etc.
+    neovim.enable = true;
+};
+
+# Some hardware-specific configuration
+hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
+```
+
+:::
+
+::: info Machine B
+
+```nix
+# Suppose this is my potato laptop
+
+imports = [ my-module ];
+
+my-module-options = {
+    # We don't need gaming options nor OBS in this machine, enable just neovim
+    neovim.enable = true;
+};
+
+# Some hardware-specific configuration hardware.graphics.extraPackages = with
+pkgs; [ mesa.opencl ];
+```
+
+:::
+
+Note that you don't necessarily need to use modules to get the same kind of
+modularity, you could technically have your raw configuration on separate files
+and import it on the machines in which you need them enabled.
+
+```nix
+imports = [
+    my-obs-configuration.nix
+    my-streaming-configration.nix
+    my-neovim-configuration.nix
+];
+```
+
+The module approach is better because you only need to import it once.
+
+::::
+
 ::: tip
-If you want to see actual nix packages, check out the
-[`nixpkgs`](https://github.com/NixOS/nixpkgs) repository. It contains a
+If you want to see real world examples of software packaged with nix, check out
+the [`nixpkgs`](https://github.com/NixOS/nixpkgs) repository. It contains a
 collection of over 120,000 applications packaged with nix, as well as the
 implementation of NixOS.
+
+Anytime you need to package something with nix, try looking for a similar
+program that was already packaged on nixpkgs, so you can use it as reference.
+
+See: https://search.nixos.org/packages
 :::
 
 ## Imperative x Declarative
