@@ -14,7 +14,7 @@ Valve Proton is essential for running many Windows-only games and VTubing applic
 ![steam_set](/steam_set.png)
 
 
-### GE-Proton
+## GE-Proton
 
 ::: tip
 If you're new to running Windows software on Linux, start with the standard Proton provided by Steam. Once you're comfortable and want to explore more compatibility options, you can try out GE-Proton for additional features and improvements.
