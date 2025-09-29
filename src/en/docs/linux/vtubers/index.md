@@ -7,7 +7,11 @@ platforms.
 <hr>
 
 <v-container>
-  <VTuberCard :="vtuber" v-for="vtuber in vtubers"></VTuberCard>
+  <v-row v-for="vtuber in vtubers" :key="vtuber.title">
+    <v-col class="pr-0 pl-0 pb-6">
+      <VTuberCard :="vtuber"></VTuberCard>
+    </v-col>
+  </v-row>
 </v-container>
 
 ::: info Missing something? Please let us know!
