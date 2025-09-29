@@ -105,9 +105,9 @@ fixing ALL of your machines' configurations.
 That way you can import your module as an input and enable the options you need
 for each machine:
 
-::: info Module
+::: code-group
 
-```nix
+```nix [module.nix]
 {
   config,
   pkgs,
@@ -131,69 +131,63 @@ in
 
   config = mkMerge [
     (mkIf cfg.obs.enable {
-        programs.obgs = {
-            enable = true;
-        };
+      programs.obgs = {
+        enable = true;
+      };
     })
     (mkIf cfg.gaming.enable {
-        programs.steam = {
-            enable = true;
-        };
+      programs.steam = {
+        enable = true;
+      };
 
       environment.systemPackages = with pkgs; [
-          lutris
-           heroic
-            umu-launcher
-            osu-lazer-bin
+        lutris
+        heroic
+        umu-launcher
+        osu-lazer-bin
       ];
     })
     (mkIf cfg.neovim.enable {
-        programs.neovim = {
-            enable = true;
-            defaultEditor = true;
-        };
+      programs.neovim = {
+        enable = true;
+        defaultEditor = true;
+      };
     })
   ];
 }
 ```
 
-:::
-
-::: info Machine A
-
-```nix
+```nix [Machine A]
 # Suppose this is my streaming machine
 
 imports = [
-    my-module # module where `my-module-options` is defined
+  ./my-module.nix # module where `my-module-options` is defined
 ];
 
-my-module-options = {
-    obs.enable = true;      # installs OBS with all my plugins
-    gaming.enable = true;   # installs steam, wine, etc.
-    neovim.enable = true;
+my-options = {
+  obs.enable = true;      # installs OBS with all my plugins
+  gaming.enable = true;   # installs steam, wine, etc.
+  neovim.enable = true;
 };
 
 # Some hardware-specific configuration
 hardware.graphics.extraPackages = with pkgs; [ rocmPackages.clr.icd ];
 ```
 
-:::
-
-::: info Machine B
-
-```nix
+```nix [Machine B]
 # Suppose this is my potato laptop
 
-imports = [ my-module ];
+imports = [
+  ./my-module.nix
+];
 
-my-module-options = {
-    # We don't need gaming options nor OBS in this machine, enable just neovim
-    neovim.enable = true;
+my-options = {
+  # We don't need gaming options nor OBS in this machine, enable just neovim
+  neovim.enable = true;
 };
 
 # Some hardware-specific configuration hardware.graphics.extraPackages = with
-pkgs; [ mesa.opencl ];
+hardware.graphics.extraPackages = with pkgs; [ mesa.opencl ];
 ```
 
 :::
@@ -204,9 +198,9 @@ and import it on the machines in which you need them enabled.
 
 ```nix
 imports = [
-    my-obs-configuration.nix
-    my-streaming-configration.nix
-    my-neovim-configuration.nix
+  ./obs.nix
+  ./streaming.nix
+  ./neovim.nix
 ];
 ```
 
