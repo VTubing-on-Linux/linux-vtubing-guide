@@ -6,6 +6,10 @@ Many popular VTubing applications / games are Windows-only. However, there are s
 
 [Wine](https://www.winehq.org/) is a compatibility layer that allows you to run Windows applications on Linux. It translates Windows API calls into POSIX calls, enabling many Windows applications to run natively on Linux. Valve also maintains a fork of Wine called [Proton](https://www.protondb.com/), which is specifically designed for gaming.
 
+![l2dc_viewer](/l2dc_viewer.png)
+
+*Live2D Cubism Viewer running under Debian 13 with Proton*
+
 
 ## Install Steam & Proton
 
@@ -13,8 +17,7 @@ Valve Proton is essential for running many Windows-only games and VTubing applic
 
 ![steam_set](/steam_set.png)
 
-
-## GE-Proton
+## GE-Proton
 
 ::: tip
 If you're new to running Windows software on Linux, start with the standard Proton provided by Steam. Once you're comfortable and want to explore more compatibility options, you can try out GE-Proton for additional features and improvements.
@@ -27,6 +30,3 @@ As the writing of this guide, GE-Proton9-11 works the best. This is however subj
 :::
 
 
-![l2dc_viewer](/l2dc_viewer.png)
-
-*Live2D Cubism Viewer running under Debian 13 with Proton*
