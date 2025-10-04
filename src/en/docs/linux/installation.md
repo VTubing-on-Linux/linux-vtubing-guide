@@ -52,14 +52,12 @@ You need to tell your computer to start from the USB drive instead of its intern
 
 ::: warning
 This installation guide assumes you are installing Linux on a computer that already has an operating system (like Windows) installed. If you are installing Linux on a new computer or one without an OS, the steps may vary slightly.
-
-This guide assumes instatllation of Ubuntu or Ubuntu-based distributions. Other distributions may have different installation processes.
 :::
 
 
 ## 4. The Installation Process
 
-Once you boot from the USB, you will be greeted by the installer.
+Installation will vary slightly between distributions, but the general process is similar. Below are the steps for installing Ubuntu, which is also representative of many other distributions.
 
 1.  **Try or Install:** You will typically see an option to "Try Ubuntu" or "Install Ubuntu".
     *   **Try Ubuntu:** This loads a "live" version of the OS from the USB drive without making any changes to your computer. It's a great way to see if you like it and check for hardware compatibility (especially check for ethernet, wifi and bluetooth).
