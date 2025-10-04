@@ -10,7 +10,7 @@ You can also join the [Linux Vtuber tech support discord server ](https://discor
 
 ## List of Contributors :
 - [KYLONEKO](https://kyloneko.net) - Original Author of the guide + Drawings of Mikan and Kyloneko logo on the homepage
-- [h-banii](https://x.com/h_banii) - Repo/vitepress setup + writing + NixOS
+- [h-banii](https://x.com/h_banii) - Repo/vitepress setup + writing + NixOS + MIDI
 - [hiimmilan](https://hiimmilan.dev) - Rewriting articles + tech jargon
 - barmy_brock - Suggesting layout
 
