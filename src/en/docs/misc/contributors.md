@@ -2,6 +2,8 @@
 If you want to contribute, feel free to open a PR or an issue on GitHub. We welcome contributions of all kinds!
 If you're not quite sure how to contribute, you can check out this [github guide](https://github.com/SPSKNM-cvicenia/Github-Introduction-EN) on how to contribute to open source projects on GitHub.
 
+You can also join the [Linux Vtuber tech support discord server ](https://discord.gg/dJys5NHxHY). Many contributors and users of this guide are there and can help you with any questions you might have.
+
 **This guide is licenced under CC-BY-NC-SA 4.0 License.** 
 
 **This guide was based upon KYLONEKO's guide under CC-BY-NC-SA 4.0 License.** Original guide can be obtained [here](https://codeberg.org/KyloNeko/Linux-Guide-to-Vtubing)

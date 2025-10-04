@@ -52,7 +52,6 @@ You need to tell your computer to start from the USB drive instead of its intern
 
 ::: warning
 This installation guide assumes you are installing Linux on a computer that already has an operating system (like Windows) installed. If you are installing Linux on a new computer or one without an OS, the steps may vary slightly.
-:::
 
 This guide assumes instatllation of Ubuntu or Ubuntu-based distributions. Other distributions may have different installation processes.
 :::
