@@ -37,6 +37,10 @@ export default defineAdditionalConfig({
         ],
       },
       {
+        text: "Audio",
+        items: [{ text: "MIDI keyboards", link: "/docs/audio/midi" }],
+      },
+      {
         text: "VTubing Software",
         items: [
           { text: "2D VTubing", link: "/docs/vt/2d" },
