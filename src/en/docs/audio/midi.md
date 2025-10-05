@@ -107,11 +107,23 @@ arecordmidi -p 24:0 path/to/output.mid # then press CTRL-C to stop
 
 ## MIDI Visualizers
 
-::: warning Under construction!
-MIDI support in a browser source doesn't seem to work properly on OBS 31.1.2,
-I have to investigate this further.
+The most convenient solution would be to use a web application that uses the
+[web MIDI API](https://www.w3.org/TR/webmidi/). However, we can't access the
+API in an OBS browser source as of now...
 
-(it used to work)
+- https://github.com/obsproject/obs-browser/issues/195.
+
+So for now we're stuck at either using another API to receive MIDI events or a
+native application.
+
+### Web
+
+- proof-of-concept with `obs-websocket`: https://github.com/h-banii/midi-visualizer-js
+
+### Native
+
+::: warning
+Under construction...
 :::
 
 ## Resources
