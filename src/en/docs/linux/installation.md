@@ -6,23 +6,8 @@ Before you start, you will need:
 *   An internet connection to download the necessary files.
 *   A backup of your important data. **The installation process can erase your hard drive.**
 
-## 1. Choose and Download a Linux Distribution
 
-A Linux distribution (or "distro") is an operating system made from a software collection that is based upon the Linux kernel.
-
-For beginners, recommended distributions include:
-
-*   [**Ubuntu**](https://ubuntu.com/download/desktop) - One of the most popular and user-friendly distributions, based on Debian.
-*   [**Pop OS**](https://system76.com/pop/) - A distribution based on Ubuntu, designed for gaming and creative professionals.
-*   [**Fedora**](https://getfedora.org/) - Made by Red Hat, known for its cutting-edge features and strong community support.
-
-Go to the website of your chosen distribution and download the latest "Desktop" version. This will be an `.iso` (disk image) file.
-
-::: tip 
-If you want to try something different, you can explore other distributions on [DistroWatch](https://distrowatch.com/).
-:::
-
-## 2. Create a Bootable USB Drive
+## 1. Create a Bootable USB Drive
 
 You need to write the downloaded image file to a USB drive to make it bootable.
 
@@ -37,7 +22,7 @@ You need to write the downloaded image file to a USB drive to make it bootable.
 
 5.  Click **"Flash!"** and wait for the process to complete.
 
-## 3. Boot from the USB Drive
+## 2. Boot from the USB Drive
 
 You need to tell your computer to start from the USB drive instead of its internal hard drive.
 
@@ -55,7 +40,7 @@ This installation guide assumes you are installing Linux on a computer that alre
 :::
 
 
-## 4. The Installation Process
+## 3. The Installation Process
 
 Installation will vary slightly between distributions, but the general process is similar. Below are the steps for installing Ubuntu, which is also representative of many other distributions.
 
@@ -74,7 +59,7 @@ Installation will vary slightly between distributions, but the general process i
 
 The installer will now copy files and install the system. This may take some time.
 
-## 5. First Boot
+## 4. First Boot
 
 Once the installation is complete, you will be prompted to restart your computer.
 
