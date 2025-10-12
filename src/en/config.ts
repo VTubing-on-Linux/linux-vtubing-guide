@@ -30,7 +30,6 @@ export default defineAdditionalConfig({
         text: "Streaming",
         items: [
           { text: "OBS", link: "/docs/streaming/obs" },
-          { text: "Window Capture on Linux", link: "/docs/streaming/capture" },
           { text: "Audio setup + tools", link: "/docs/streaming/audio" }
         ],
       },

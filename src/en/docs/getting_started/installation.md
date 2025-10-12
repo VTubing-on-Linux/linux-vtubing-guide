@@ -113,7 +113,7 @@ OBS isn't installed by default. In Application Menu, find app called Discover. D
 
 ![PikaOS Discover](/pikaos_discover.jpg)
 
-You will be prompted for your password. After installation is complete, you can open OBS from Application Menu and follow the [OBS](../streaming/obs.md) and [Capture](../streaming/capture.md) sections of this guide to set it up for streaming and recording.
+You will be prompted for your password. After installation is complete, you can open OBS from Application Menu and follow the [OBS](../streaming/obs.md) section of this guide to set it up for streaming and recording.
 
 After following those steps, you should be ready to start VTubing on Linux!
 

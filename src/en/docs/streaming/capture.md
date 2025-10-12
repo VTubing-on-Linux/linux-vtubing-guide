@@ -1,1 +1,0 @@
-# Window Capture on Linux
