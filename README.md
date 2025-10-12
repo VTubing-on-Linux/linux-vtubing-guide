@@ -2,6 +2,8 @@
 
 Community maintained guide to VTubing on Linux.
 
+https://vtubing-on-linux.github.io/linux-vtubing-guide/
+
 ## Developing
 
 Preview changes
