@@ -6,8 +6,7 @@ export default defineAdditionalConfig({
   themeConfig: {
     nav: [
       { text: "Introduction", link: "/docs/docs" },
-      { text: "Installation", link: "/docs/linux/installation" },
-      { text: "OBS", link: "/docs/streaming/obs" },
+      { text: "Installation", link: "/docs/getting_started/installation" },
     ],
 
     sidebar: [
@@ -16,13 +15,12 @@ export default defineAdditionalConfig({
         items: [
           { text: "Introduction", link: "/docs/docs" },
           { text: "Getting Started", link: "/docs/getting_started/getting_started"},
-          { text: "Hardware", link: "/docs/getting_started/hardware" }
+          { text: "Installation", link: "/docs/getting_started/installation" },
         ],
       },
       {
         text: "Linux",
         items: [
-          { text: "Installation", link: "/docs/linux/installation" },
           { text: "Running windows software", link: "/docs/linux/running_win_software" },
           { text: "Wayland vs. X11", link: "/docs/linux/wayland_vs_xorg" },
           { text: "NixOS", link: "/docs/linux/nixos" },
