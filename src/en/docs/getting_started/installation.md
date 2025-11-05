@@ -109,6 +109,10 @@ For installation of VTube Studio, please refer to the [2D VTubing](../vt/2d.md) 
 
 ### OBS
 
+::: warning
+On PikaOS, if there is any issue with OBS, use the flatpak version of OBS.
+:::
+
 OBS isn't installed by default. In Application Menu, find app called Discover. Discover will help you navigate installation of new software without touching terminal. Open Discover and search for "OBS". Then click top right install button:
 
 ![PikaOS Discover](/pikaos_discover.jpg)
