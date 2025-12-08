@@ -1,6 +1,6 @@
 # MIDI keyboards
 
-MIDI keyboards *should* work out of the box.
+MIDI keyboards _should_ work out of the box.
 
 ## Tools
 

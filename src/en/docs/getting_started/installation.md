@@ -2,10 +2,9 @@
 
 Before you start, you will need:
 
-*   A USB flash drive with at least 8 GB of storage.
-*   An internet connection to download the necessary files.
-*   A backup of your important data. **The installation process can erase your hard drive.**
-
+- A USB flash drive with at least 8 GB of storage.
+- An internet connection to download the necessary files.
+- A backup of your important data. **The installation process can erase your hard drive.**
 
 ## 1. Create a Bootable USB Drive
 
@@ -20,7 +19,7 @@ After downloading the ISO, you need to write it to a USB drive to make it bootab
 1.  **Download a flashing tool.** [BalenaEtcher](https://www.balena.io/etcher/) is a good, cross-platform option that works on Windows, macOS, and Linux.
 2.  **Open BalenaEtcher.**
 3.  Select **"Flash from file"** and choose the `.iso` file you downloaded.
-4.  Select **"Select target"** and choose your USB drive. 
+4.  Select **"Select target"** and choose your USB drive.
 
 ![Etcher 1](/etcher_1.jpg)
 
@@ -49,7 +48,6 @@ Now you need to tell your computer to start from the USB drive instead of its in
 4.  **Change the boot order.** In the BIOS/UEFI menu, find the "Boot" or "Boot Order" section. Move the USB drive to the top of the list.
 5.  **Save and Exit.** Your computer will now restart and boot from the USB drive.
 
-
 ::: warning
 This installation guide assumes you are installing Linux on a computer that already has an operating system (like Windows) installed. If you are installing Linux on a new computer or one without an OS, the steps may vary slightly.
 :::
@@ -59,6 +57,7 @@ Some systems have something called "Secure Boot" enabled by default. Secure Boot
 :::
 
 ## 3. The Installation Process
+
 Once your computer boots from the USB drive, you will see the PikaOS boot screen:
 ![PikaOS Boot](/pikaos_boot.jpg)
 
@@ -67,6 +66,7 @@ Here, just press `Enter` to start the live session. You will be taken to the Pik
 ![PikaOS Installation Dialog](/pikaos_idialog.jpg)
 
 You have two options:
+
 - **Install distro to system**: This will start the installation process.
 - **Use PikaOS in Live Media**: This will let you explore the live environment without making any changes to your system. Here, you can test the feel of PikaOS.
 
@@ -85,7 +85,7 @@ Once the installation is complete, you will be prompted to restart your computer
 
 1.  Remove the USB drive.
 2.  Press `Restart`.
-3.  Your computer will boot into your new PikaOS installation. 
+3.  Your computer will boot into your new PikaOS installation.
 
 Congratulations, you have successfully installed PikaOS! PikaOS will now prompt you to perform initial setup tasks. After completing restart, you should see the following screen:
 
