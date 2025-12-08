@@ -114,10 +114,6 @@
     "about": "I am a lamia who makes videogames and plays a bunch of retro stuff! You've heard of a rattlesnake, now here’s a BATTLESNAKE! Come for the cozy vibes. Stay for the ultraviolence.",
     "distros": [
       {
-        "name": "Debian",
-        "url": "https://distrowatch.com/table.php?distribution=debian"
-      },
-      {
         "name": "Arch Linux",
         "url": "https://distrowatch.com/table.php?distribution=arch"
       }
