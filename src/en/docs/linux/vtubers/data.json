@@ -107,5 +107,185 @@
         "url": "https://codeberg.org/KyloNeko"
       }
     ]
+  },
+  {
+    "title": "KiriArtemisVT",
+    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b374c6d5-7b15-45b6-9b96-b0c2105462c9-profile_image-70x70.png",
+    "about": "I am a lamia who makes videogames and plays a bunch of retro stuff! You've heard of a rattlesnake, now here’s a BATTLESNAKE! Come for the cozy vibes. Stay for the ultraviolence.",
+    "distros": [
+      {
+        "name": "Debian",
+        "url": "https://distrowatch.com/table.php?distribution=debian"
+      },
+      {
+        "name": "Arch Linux",
+        "url": "https://distrowatch.com/table.php?distribution=arch"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://player.twitch.tv/?channel=kiriartemisvt",
+        "platform": "Twitch"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "twitch",
+        "handle": "KiriArtemisVT",
+        "url": "https://twitch.tv/kiriartemisvt"
+      },
+      {
+        "icon": "mastodon",
+        "handle": "ExpiredPopsicle",
+        "url": "https://vt.social/@ExpiredPopsicle"
+      },
+      {
+        "icon": "git",
+        "handle": "ExpiredPopsicle",
+        "url": "https://github.com/ExpiredPopsicle"
+      },
+      {
+        "handle": "Blog",
+        "url": "https://expiredpopsicle.com/"
+      },
+      {
+        "handle": "Peertube/VoD Archive",
+        "url": "https://video.expiredpopsicle.com/c/expiredpopsicle/videos"
+      }
+    ]
+  },
+  {
+    "title": "copygirl",
+    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/3a4f2123-3d77-40d0-b8a6-ebbd74dd7ed7-profile_image-70x70.png",
+    "about": "My Little Perfectionist. Transgender anime slimegirl (she/her) in training, doing streaming as a hobby. Wanna-be FOSS game developer and incredibly picky about games. Wants to make everyone happy and protect them! 💚",
+    "distros": [
+      {
+        "name": "Arch Linux",
+        "url": "https://distrowatch.com/table.php?distribution=arch"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://player.twitch.tv/?channel=copygirl",
+        "platform": "Twitch"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "twitch",
+        "handle": "Copygirl",
+        "url": "https://twitch.tv/copygirl"
+      },
+      {
+        "icon": "mastodon",
+        "handle": "Copygirl",
+        "url": "https://vt.social/@copygirl"
+      },
+      {
+        "icon": "mastodon",
+        "handle": "Copygirl",
+        "url": "https://fedi.anarchy.moe/copygirl"
+      }
+    ]
+  },
+  {
+    "title": "MyriadMinds",
+    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/fa49980e-411b-4254-b855-ba20b30070b9-profile_image-70x70.png",
+    "about": "I need a Myriad of Minds because i keep getting distracted by both games and code",
+    "distros": [
+      {
+        "name": "NixOS",
+        "url": "https://distrowatch.com/table.php?distribution=nixos"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://player.twitch.tv/?channel=myriadminds",
+        "platform": "Twitch"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "twitch",
+        "handle": "MyriadMinds",
+        "url": "https://twitch.tv/myriadminds"
+      },
+      {
+        "icon": "mastodon",
+        "handle": "MyriadMinds",
+        "url": "https://vt.social/@MyriadMinds"
+      }
+    ]
+  },
+  {
+    "title": "LainVT",
+    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/e47cf7d7-5724-4b83-a224-124cd5a168d7-profile_image-70x70.png",
+    "about": "Hi there! We are Lain and Kalindra. We want to make a kind, comfortable place to make new friends, for like-minded people to get together and have silly and interesting discussions, or just to relax.",
+    "distros": [
+      {
+        "name": "Arch Linux",
+        "url": "https://distrowatch.com/table.php?distribution=arch"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://player.twitch.tv/?channel=lainvt",
+        "platform": "Twitch"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "twitch",
+        "handle": "LainVT",
+        "url": "https://twitch.tv/lainvt"
+      }
+    ]
+  },
+  {
+    "title": "LunaRequest",
+    "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b649a8c0-d3ac-4865-bd52-19b17ff34fb0-profile_image-70x70.png",
+    "about": "Hi, I'm luna I love to code and I go by she/her. I use linux for everything for about 5 years now. I'm doing this streaming thing for fun, I happen to work at a certain green lizard linux company",
+    "distros": [
+      {
+        "name": "openSUSE (tumbleweed)",
+        "url": "https://distrowatch.com/table.php?distribution=opensuse"
+      },
+      {
+        "name": "Arch Linux",
+        "url": "https://distrowatch.com/table.php?distribution=arch"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://player.twitch.tv/?channel=lunarequest",
+        "platform": "Twitch"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "twitch",
+        "handle": "LunaRequest",
+        "url": "https://twitch.tv/lunarequest"
+      },
+      {
+        "icon": "mastodon",
+        "handle": "Lunarequest",
+        "url": "https://social.nullrequest.com/@lunarequest"
+      },
+      {
+        "icon": "git",
+        "handle": "Lunarequest",
+        "url": "https://github.com/lunarequest"
+      },
+      {
+        "icon": "git",
+        "handle": "Lunarequest",
+        "url": "https://git.nullrequest.com/lunarequest/"
+      },
+      {
+        "handle": "Blog",
+        "url": "https://nullrequest.com/"
+      }
+    ]
   }
 ]
