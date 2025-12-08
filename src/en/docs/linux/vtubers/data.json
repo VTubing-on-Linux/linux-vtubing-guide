@@ -242,6 +242,54 @@
     ]
   },
   {
+    "title": "Hoshino Lina",
+    "avatar": "https://yt3.googleusercontent.com/gduRnmWqh4tBsejaKV3fW57ZMi4QRJd_1vyQaSxpaY0dl06JWM24bC-e_5K-eqQXKnHGgj4CRg=s160-c-k-c0x00ffffff-no-rj",
+    "about": "Hello, world! My name is Hoshino Lina! I'm a developer VTuber!",
+    "distros": [
+      {
+        "name": "Arch Linux",
+        "url": "https://distrowatch.com/table.php?distribution=arch"
+      },
+      {
+        "name": "Fedora",
+        "url": "https://distrowatch.com/table.php?distribution=fedora"
+      }
+    ],
+    "embeds": [
+      {
+        "url": "https://www.youtube.com/embed/live_stream?channel=UCwkfNQzKwICfPKs6V0ZUFZQ",
+        "platform": "YouTube"
+      }
+    ],
+    "socials": [
+      {
+        "icon": "youtube",
+        "handle": "Hoshino Lina",
+        "url": "https://www.youtube.com/AsahiLina"
+      },
+      {
+        "icon": "mastodon",
+        "handle": "Hoshino Lina",
+        "url": "https://vt.social/@lina"
+      },
+      {
+        "icon": "bluesky",
+        "handle": "Hoshino Lina",
+        "url": "https://bsky.app/profile/lina.yt"
+      },
+      {
+        "icon": "twitter",
+        "handle": "Hoshino Lina",
+        "url": "https://x.com/Lina_Hoshino"
+      },
+      {
+        "icon": "git",
+        "handle": "hoshinolina",
+        "url": "https://github.com/hoshinolina"
+      }
+    ]
+  },
+  {
     "title": "LunaRequest",
     "avatar": "https://static-cdn.jtvnw.net/jtv_user_pictures/b649a8c0-d3ac-4865-bd52-19b17ff34fb0-profile_image-70x70.png",
     "about": "Hi, I'm luna I love to code and I go by she/her. I use linux for everything for about 5 years now. I'm doing this streaming thing for fun, I happen to work at a certain green lizard linux company",
