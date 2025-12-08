@@ -8,8 +8,7 @@ Many popular VTubing applications / games are Windows-only. However, there are s
 
 ![l2dc_viewer](/l2dc_viewer.png)
 
-*Live2D Cubism Viewer running under Debian 13 with Proton*
-
+_Live2D Cubism Viewer running under Debian 13 with Proton_
 
 ## Install Steam & Proton
 
@@ -23,10 +22,8 @@ Valve Proton is essential for running many Windows-only games and VTubing applic
 If you're new to running Windows software on Linux, start with the standard Proton provided by Steam. Once you're comfortable and want to explore more compatibility options, you can try out GE-Proton for additional features and improvements.
 :::
 
-Proton-GE is a community-made version of Proton that includes additional patches and improvements for better compatibility with certain applications. It is recommended to use Proton-GE for VTubing software, as it often provides better performance and compatibility than the default Proton version. To install Proton-GE, download the ProtonUp-Qt app and run it. The app will give you a menu for what version to download and where to install it to. 
+Proton-GE is a community-made version of Proton that includes additional patches and improvements for better compatibility with certain applications. It is recommended to use Proton-GE for VTubing software, as it often provides better performance and compatibility than the default Proton version. To install Proton-GE, download the ProtonUp-Qt app and run it. The app will give you a menu for what version to download and where to install it to.
 
 ::: tip
 As the writing of this guide, GE-Proton9-11 works the best. This is however subject to change.
 :::
-
-

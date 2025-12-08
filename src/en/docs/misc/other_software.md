@@ -1,4 +1,5 @@
 ## Other Software
+
 **3D Vtubing Programs**
 
 - [VSeeFace](https://www.vseeface.icu/)
@@ -11,10 +12,9 @@
 
 - [VMagicMirror](https://malaybaku.github.io/VMagicMirror/en/)
 
-**2D Vtubing Programs** 
+**2D Vtubing Programs**
 
 - [Vtube Studio](https://store.steampowered.com/app/1325860/VTube_Studio/)
-
 
 **PNGtuber Programs**
 
@@ -28,11 +28,10 @@
 
 **Face Tracking**
 
-- [FaceTracker](https://flathub.org/apps/de.z_ray.Facetracker) off Flathub or you can follow [RougeRen's guide](https://www.youtube.com/watch?v=Q3aMVZXh_cI&t=7s) 
+- [FaceTracker](https://flathub.org/apps/de.z_ray.Facetracker) off Flathub or you can follow [RougeRen's guide](https://www.youtube.com/watch?v=Q3aMVZXh_cI&t=7s)
 
 - [ifacialmocap (iPhone or iPad with FaceID required)](https://apps.apple.com/us/app/ifacialmocap/id1489470545)
-
-	- This software can offer better tracking, but requires either a 3D model or Live2D model with rigging specifically made for Apple's ARKit
+  - This software can offer better tracking, but requires either a 3D model or Live2D model with rigging specifically made for Apple's ARKit
 
 - [VBridger](https://store.steampowered.com/app/1898830/VBridger/) This works with proton, Check out Weeto's Video [here](https://www.youtube.com/watch?v=PBN9hPVSklQ&t=666s)
 
@@ -48,14 +47,13 @@
 
 - [Soundux voicechanger](https://github.com/Soundux/Soundux/releases/tag/0.2.7) Linux version can be found on the github and its feature rich in whad you can do
 
-- [Sox - Sound eXchange](https://sourceforge.net/projects/sox/files/sox/14.4.2/) this may work 
+- [Sox - Sound eXchange](https://sourceforge.net/projects/sox/files/sox/14.4.2/) this may work
 
-- [Jack Rack](https://jack-rack.sourceforge.net/) can work as a voice changer if you get the right plugins 
-
+- [Jack Rack](https://jack-rack.sourceforge.net/) can work as a voice changer if you get the right plugins
 
 **Art Programs/Art Animation programs**
 
-- [Krita](https://krita.org/en/) comes in flatpak [here](https://flathub.org/apps/org.kde.krita)  or you can purchase it on [Steam](https://store.steampowered.com/app/280680/Krita/)
+- [Krita](https://krita.org/en/) comes in flatpak [here](https://flathub.org/apps/org.kde.krita) or you can purchase it on [Steam](https://store.steampowered.com/app/280680/Krita/)
 
 - [Aseprite](https://www.aseprite.org/) you can purchase it on their site or on [Steam](https://store.steampowered.com/app/431730/Aseprite/) , or get it for free from Building it from [Source](https://github.com/aseprite/aseprite) - can also animate sprites
 
@@ -68,8 +66,7 @@
 - [inkscape](https://inkscape.org/) - Drawing and image manipulation program, similar to photoshop
 
 - [Gimp](https://www.gimp.org/) - decent alternative to photoshop, also capable of drawing with it
-
-	- not every art program is listed as their are alot on [Flathub](https://flathub.org/apps/search?q=art)
+  - not every art program is listed as their are alot on [Flathub](https://flathub.org/apps/search?q=art)
 
 **Video Editors**
 
@@ -93,7 +90,7 @@
 
 - [Pinegrow](https://pinegrow.com/) - not free , has a free trial possibly the best website editor tho
 
-- [Bootstrap Studio](https://bootstrapstudio.io/) - not free , has a free trial 
+- [Bootstrap Studio](https://bootstrapstudio.io/) - not free , has a free trial
 
 - [Editor.Js](https://github.com/codex-team/editor.js?ref=itsfoss.com) , [Plugins](https://github.com/editor-js/awesome-editorjs?tab=readme-ov-file) - Completely Free
 
