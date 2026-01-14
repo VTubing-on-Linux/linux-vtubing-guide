@@ -25,7 +25,7 @@ export default defineAdditionalConfig({
         text: "Linux",
         items: [
           {
-            text: "Running windows software",
+            text: "Running Windows software",
             link: "/docs/linux/running_win_software",
           },
           { text: "Wayland vs. X11", link: "/docs/linux/wayland_vs_xorg" },
