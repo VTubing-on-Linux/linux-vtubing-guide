@@ -33,6 +33,24 @@ export default defineAdditionalConfig({
         ],
       },
       {
+        text: "Wine",
+        items: [
+          { text: "Introduction", link: "/docs/wine/introduction" },
+          {
+            text: "Third party",
+            link: "docs/wine/third-party",
+            items: [
+              { text: "Steam", link: "/docs/wine/third-party/steam" },
+              { text: "Lutris", link: "/docs/wine/third-party/lutris" },
+              { text: "UMU", link: "/docs/wine/third-party/umu" },
+            ],
+          },
+          {
+            text: "Applications",
+          },
+        ],
+      },
+      {
         text: "Streaming",
         items: [
           { text: "OBS", link: "/docs/streaming/obs" },
