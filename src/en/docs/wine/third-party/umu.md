@@ -1,10 +1,11 @@
 # UMU
 
-It can be used as a CLI application to run games with Proton and automatically
-apply quirks. This can also be used by other launchers, like Lutris.
+UMU can be used as a CLI application to run games with Proton and automatically
+apply quirks.
 
 ::: tip
-Lutris should automatically use UMU, so you don't need to install it.
+Lutris, Heroic, and other launchers should automatically use UMU, so you don't
+need to install it unless you want to use it directly.
 :::
 
 ## Installation
