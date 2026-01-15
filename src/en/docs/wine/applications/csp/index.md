@@ -12,7 +12,7 @@ A basic Clip Studio Paint wine prefix is fairly easy to setup:
 
 ```sh
 export WINEPREFIX=/path/to/your/prefix
-winecfg /v win81
+winecfg /v win7
 wine ~/Downloads/ClipStudioPaintInstaller.exe
 ```
 
