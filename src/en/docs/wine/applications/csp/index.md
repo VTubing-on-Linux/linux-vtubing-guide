@@ -254,6 +254,40 @@ The asset store in the browser uses a custom URI protocol to download assets,
 you need to make sure you have the desktop entry for it. See the [Desktop
 entries](#desktop-entries) section.
 
+## Custom launcher
+
+You can write a basic shell script to launch CSP from the terminal:
+
+```sh
+#!/usr/bin/env sh
+
+export WINEPREFIX=/path/to/your/prefix
+
+wine ~/clip-studio-files/CLIP STUDIO PAINT/CLIPStudioPaint.exe "$@"
+# OBS.: That $@ at the ends is to repass all arguments to CLIPStudio.exe
+```
+
+Then save it as `clip-studio-paint`, give it execution permissions `chmod +x
+clip-studio-paint` and place it inside one of your `PATH` folders.
+
+Usually under `~/.local/bin` or `/usr/local/bin` should be fine.
+
+Placing an executable in the `PATH` allows you to execute it from anywhere
+without the full path to it.
+
+::: tip
+You can see your `PATH` folders with `echo`
+
+```sh
+echo $PATH | tr ':' '\n'
+```
+
+:::
+
+::: tip
+You can do the same thing for `clip-studio`
+:::
+
 ## Desktop entries
 
 Wine should create these desktop entries automatically when you install Clip
@@ -299,7 +333,8 @@ StartupWMClass=clipstudio.exe
 
 ::: tip
 
-If you have a custom launcher/script, then:
+If you have a custom launcher/script, like the one in
+[#custom-launcher](#custom-launcher), then:
 
 ```ini
 # if you added it to your PATH
@@ -453,32 +488,6 @@ You'll need to fix your desktop entry files. See
 We only need to export an environment variable once. So technically the
 `export` could be dropped in the second example above, but it was kept for the
 sake of consistency.
-:::
-
-## Custom launcher
-
-You can write a basic shell script to launch CSP from the terminal:
-
-```sh
-#!/usr/bin/env sh
-
-export WINEPREFIX=/path/to/your/prefix
-
-wine ~/clip-studio-files/CLIP STUDIO PAINT/CLIPStudioPaint.exe "$@"
-# OBS.: That $@ at the ends is to repass all arguments to CLIPStudio.exe
-```
-
-Then save it as `clip-studio-paint`, give it execution permissions `chmod +x
-clip-studio-paint` and place it inside one of your `PATH` folders.
-
-You can type `echo $PATH | tr ':' '\n'` to see the list of folders where you
-can place it. Usually under `~/.local/bin` or `/usr/local/bin` should be fine.
-
-Placing an executable in the `PATH` allows you to execute it from anywhere
-without the full path to it.
-
-::: tip
-You can do the same thing for `clip-studio`
 :::
 
 ## Mix and match Clip Studio and Clip Studio Paint versions
