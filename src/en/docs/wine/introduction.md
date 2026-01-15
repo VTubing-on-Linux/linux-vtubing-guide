@@ -212,7 +212,13 @@ That's useful if it's a Steam game, since you can set it in the launch options:
 WINEDLLOVERRIDES="winhttp.dll=n,b" %command%
 ```
 
-## Manually creating/updating prefixes
+## Wine explorer
+
+You can use `wine explorer` to see the files inside your prefix.
+
+![wine explorer](/wine/wine-explorer.png)
+
+## Wineboot
 
 If you ever need to create a new wine prefix without having to run an
 executable, you can use the following command
