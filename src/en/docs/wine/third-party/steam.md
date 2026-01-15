@@ -12,11 +12,41 @@ menu.
 
 ![Steam settings page to set the compat tool](/wine/steam-compat-tool.png)
 
-If you need to install Proton forks (to fix certain games), you'll need third
-party tools:
+If you need to install Proton forks to fix some game, you can use third party
+tools:
 
 - [ProtonPlus](https://github.com/Vysp3r/ProtonPlus)
 - [ProtonUp-Qt](https://davidotek.github.io/protonup-qt/)
+
+Or install it manually:
+
+- Download some Proton fork, for example: [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom/releases)
+- Extract it into `~/.steam/steam/compatibilitytools.d/`
+- Restart Steam
+
+It should look something like this:
+
+```sh
+~/.steam/steam/compatibilitytools.d
+├── LegacyRuntime
+│   ├── compatibilitytool.vdf
+│   ├── scout-legacy
+│   └── toolmanifest.vdf
+└── Some-Proton-fork
+    ├── compatibilitytool.vdf
+    ├── filelock.py
+    ├── files
+    ├── LICENSE
+    ├── LICENSE.OFL
+    ├── PATENTS.AV1
+    ├── proton
+    ├── proton_3.7_tracked_files
+    ├── protonfixes
+    ├── __pycache__
+    ├── toolmanifest.vdf
+    ├── user_settings.sample.py
+    └── version
+```
 
 ## Launch options
 
