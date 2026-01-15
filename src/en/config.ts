@@ -47,6 +47,12 @@ export default defineAdditionalConfig({
           },
           {
             text: "Applications",
+            items: [
+              {
+                text: "Clip Studio Paint",
+                link: "/docs/wine/applications/csp",
+              },
+            ],
           },
         ],
       },
