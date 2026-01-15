@@ -490,16 +490,16 @@ v4.
 There are two main approaches:
 
 - Use the same wine prefix
-- Use separate wine prefixes and symlink the CELSYSUserData folder
+- Use 2 separate wine prefixes and symlink the CELSYSUserData folder
 
 The first one is fairly easy and straightforward:
 
 ```sh
-WINEPREFIX=/shared/prefix CLIPStudio.exe
-WINEPREFIX=/shared/prefix CLIPStudioPaint.exe
+WINEPREFIX=/shared/prefix /path/to/v4/CLIPStudio.exe
+WINEPREFIX=/shared/prefix /path/to/v1/CLIPStudioPaint.exe
 ```
 
-For the second solution, need to symlink the
+For the second solution, you need to symlink the
 `users/hbanii/AppData/Roaming/CELSYSUserData` folder. That folder stores all
 your assets and settings, we need to make sure both v1 and v4 can access it.
 
