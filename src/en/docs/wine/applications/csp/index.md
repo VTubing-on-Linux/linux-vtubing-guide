@@ -512,6 +512,9 @@ WINEPREFIX=/shared/prefix /path/to/v4/CLIPStudio.exe
 WINEPREFIX=/shared/prefix /path/to/v1/CLIPStudioPaint.exe
 ```
 
+However, I couldn't log in `Clip Studio`, so I went with the second approach:
+keep the prefixes separated.
+
 For the second solution, you need to symlink the
 `users/hbanii/AppData/Roaming/CELSYSUserData` folder. That folder stores all
 your assets and settings, we need to make sure both v1 and v4 can access it.
@@ -531,6 +534,17 @@ ln -s \
     ~/v1-prefix/drive_c/users/YOUR-USERNAME/AppData/Roaming/CELSYSUserData \
     ~/v4-prefix/drive_c/users/YOUR-USERNAME/AppData/Roaming/CELSYSUserData
 ```
+
+We can't use **Clip Studio** to login at the moment because of a glitch, but we
+can use **Clip Studio Paint**:
+
+```sh
+WINEPREFIX=~/v4-prefix /path/to/v4/CLIPStudioPaint.exe
+```
+
+And follow the [#activating-your-license](#activating-your-license) section to
+login. That lets you login even if you don't have a v4 license. That login
+information should persist when you open **Clip Studio**.
 
 Now you can manage your assets with Clip Studio v4:
 
