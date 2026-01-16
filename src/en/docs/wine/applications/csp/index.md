@@ -19,8 +19,12 @@ wine ~/Downloads/ClipStudioPaintInstaller.exe
 That's pretty much it for the base functionality. See
 [#optional-wine-tricks](#optional-wine-tricks) for more.
 
+::: tip
+Read the [#wine](/docs/wine/introduction/) section first~
+:::
+
 ::: info
-You might need `winbind`, see [#wine](../../wine/introduction/)
+You might need `winbind`. See [#wine](/docs/wine/introduction/)
 :::
 
 ### Clip Studio
