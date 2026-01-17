@@ -25,11 +25,35 @@ export default defineAdditionalConfig({
         text: "Linux",
         items: [
           {
-            text: "Running windows software",
+            text: "Running Windows software",
             link: "/docs/linux/running_win_software",
           },
           { text: "Wayland vs. X11", link: "/docs/linux/wayland_vs_xorg" },
           { text: "NixOS", link: "/docs/linux/nixos" },
+        ],
+      },
+      {
+        text: "Wine",
+        items: [
+          { text: "Introduction", link: "/docs/wine/introduction" },
+          {
+            text: "Third party",
+            link: "docs/wine/third-party",
+            items: [
+              { text: "Steam", link: "/docs/wine/third-party/steam" },
+              { text: "Lutris", link: "/docs/wine/third-party/lutris" },
+              { text: "UMU", link: "/docs/wine/third-party/umu" },
+            ],
+          },
+          {
+            text: "Applications",
+            items: [
+              {
+                text: "Clip Studio Paint",
+                link: "/docs/wine/applications/csp",
+              },
+            ],
+          },
         ],
       },
       {
