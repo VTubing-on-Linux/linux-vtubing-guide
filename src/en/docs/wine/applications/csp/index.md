@@ -273,6 +273,8 @@ export WINEPREFIX=/path/to/your/prefix
 
 wine ~/clip-studio-files/CLIP STUDIO PAINT/CLIPStudioPaint.exe "$@"
 # OBS.: That $@ at the ends is to repass all arguments to CLIPStudio.exe
+
+wineserver -k
 ```
 
 Then save it as `clip-studio-paint`, give it execution permissions `chmod +x
