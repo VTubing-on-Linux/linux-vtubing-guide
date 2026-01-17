@@ -7,12 +7,12 @@
 A basic Clip Studio Paint wine prefix is fairly easy to setup:
 
 - wine: latest, version 10 or above
-- winecfg: Windows 7
+- winecfg: Windows 8.1
 - winetricks: none
 
 ```sh
 export WINEPREFIX=/path/to/your/prefix
-winecfg /v win7
+winecfg /v win81
 wine ~/Downloads/ClipStudioPaintInstaller.exe
 ```
 
@@ -239,6 +239,10 @@ _EOF_
     w_try_regedit "${W_TMP}"/set-webview2-path.reg
 }
 ```
+
+::: warning
+You need to use `win7` instead of `win81` in the `winecfg` settings.
+:::
 
 ::: warning
 You might need to update the download url and hash.
