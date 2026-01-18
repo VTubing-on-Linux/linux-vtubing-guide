@@ -528,10 +528,8 @@ Let's suppose you have version v1 with a wine prefix at `~/v1-prefix` and v4 at
 `~/v4-prefix`:
 
 ```sh
-export WINEPREFIX=~/v4-prefix
-
 # If you don't have a v4 prefix yet, create one
-wineboot
+WINEPREFIX=~/v4-prefix wineboot
 
 # Delete v4's CELSYSUserData
 rm -rf ~/v4-prefix/drive_c/users/YOUR-USERNAME/AppData/Roaming/CELSYSUserData
