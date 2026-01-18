@@ -473,8 +473,8 @@ mv "${WINEPREFIX}/drive_c/Program Files/CELSYS/CLIP STUDIO 1.5" ~/clip-studio-fi
 Now we can start `clip studio` and `clip studio paint` using
 
 ```sh
-wine ~/clip-studio-files/CLIP STUDIO/CLIPStudio.exe
-wine ~/clip-studio-files/CLIP STUDIO PAINT/CLIPStudioPaint.exe
+wine "$HOME/clip-studio-files/CLIP STUDIO/CLIPStudio.exe"
+wine "$HOME/clip-studio-files/CLIP STUDIO PAINT/CLIPStudioPaint.exe"
 ```
 
 This allows us to create, delete, and compare different wine prefixes without
@@ -482,10 +482,10 @@ worrying about messing with csp's installation.
 
 ```sh
 export WINEPREFIX=/some/wineprefix
-wine ~/clip-studio-files/CLIP STUDIO/CLIPStudio.exe
+wine "$HOME/clip-studio-files/CLIP STUDIO/CLIPStudio.exe"
 
 export WINEPREFIX=/some/quirky/wineprefix
-wine ~/clip-studio-files/CLIP STUDIO/CLIPStudio.exe
+wine "$HOME/clip-studio-files/CLIP STUDIO/CLIPStudio.exe"
 ```
 
 ::: warning
