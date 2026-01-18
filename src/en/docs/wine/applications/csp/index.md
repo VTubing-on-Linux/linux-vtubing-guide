@@ -533,8 +533,10 @@ export WINEPREFIX=~/v4-prefix
 # If you don't have a v4 prefix yet, create one
 wineboot
 
-# Now symlink the CELSYSUserData folder
-# (if you already have a CELSYSUserData in the v4 prefix, delete it)
+# Delete v4's CELSYSUserData
+rm -rf ~/v4-prefix/drive_c/users/YOUR-USERNAME/AppData/Roaming/CELSYSUserData
+
+# Now symlink it
 ln -s \
     ~/v1-prefix/drive_c/users/YOUR-USERNAME/AppData/Roaming/CELSYSUserData \
     ~/v4-prefix/drive_c/users/YOUR-USERNAME/AppData/Roaming/CELSYSUserData
