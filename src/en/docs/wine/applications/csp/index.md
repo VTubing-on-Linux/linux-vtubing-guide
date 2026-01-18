@@ -540,15 +540,15 @@ ln -s \
     ~/v4-prefix/drive_c/users/YOUR-USERNAME/AppData/Roaming/CELSYSUserData
 ```
 
-We can't use **Clip Studio** to login at the moment because of a glitch, but we
-can use **Clip Studio Paint**:
+We can't use **Clip Studio** to login at the moment because the login page is
+broken, but we can use **Clip Studio Paint** instead:
 
 ```sh
 WINEPREFIX=~/v4-prefix /path/to/v4/CLIPStudioPaint.exe
 ```
 
-And follow the [#activating-your-license](#activating-your-license) section to
-login. That lets you login even if you don't have a v4 license. That login
+Follow the [#activating-your-license](#activating-your-license) section to
+login. That lets you login even if you don't have a v4 license. Your login
 information should persist when you open **Clip Studio**.
 
 Now you can manage your assets with Clip Studio v4:
