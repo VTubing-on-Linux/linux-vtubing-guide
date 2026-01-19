@@ -270,7 +270,7 @@ You can write a basic shell script to launch CSP from the terminal:
 
 export WINEPREFIX=/path/to/your/prefix
 
-wine ~/clip-studio-files/CLIP STUDIO PAINT/CLIPStudioPaint.exe "$@"
+wine "$HOME/clip-studio-files/CLIP STUDIO PAINT/CLIPStudioPaint.exe" "$@"
 # OBS.: That $@ at the ends is to repass all arguments to CLIPStudio.exe
 
 wineserver -k
