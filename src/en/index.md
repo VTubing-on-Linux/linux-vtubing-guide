@@ -8,9 +8,12 @@ hero:
   carousel:
     images:
       [
-        { src: "/mikanlinux.png", alt: "Mikan the Mink - Drawn by KYLONEKO" },
-        { src: "/kylonekolinux.png", alt: "Kyloneko - Drawn by KYLONEKO" },
-        { src: "/venilinux.png", alt: "Venituber - Drawn by KYLONEKO" },
+        { src: "/kylo.png", alt: "Kylo - Drawn by zoe_baskerville" },
+        { src: "/Veni.png", alt: "Veni - Drawn by zoe_baskerville" },
+        { src: "/zoe.png", alt: "Zoe - Drawn by zoe_baskerville" },
+        { src: "/mikan.png", alt: "Mikan - Drawn by zoe_baskerville" },
+        { src: "/lace.png", alt: "Lace - Drawn by zoe_baskerville" },
+        { src: "/REN.png", alt: "REN - Drawn by zoe_baskerville" },
       ]
     show-arrows: hover
     cycle:
