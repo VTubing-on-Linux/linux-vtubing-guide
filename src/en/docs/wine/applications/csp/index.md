@@ -200,13 +200,6 @@ wine ~/Downloads/MicrosoftEdgeWebView2RuntimeInstallerX64.exe
 winecfg /v win7 # this is very important, webview2 requires this
 ```
 
-::: tip
-You can use `winecfg` to set webview2's version to `win7` while CSP uses
-`win81`.
-
-But since CSP works fine on `win7`, it's easier to set the global version.
-:::
-
 #### Fixed version
 
 You can use this winetrick verb to install it: `winetricks /path/to/webview2.verb`
@@ -235,13 +228,9 @@ _EOF_
 
     w_try_regedit "${W_TMP}"/set-webview2-path.reg
 
-    w_set_winver win7
+    w_set_app_winver msedgewebview2.exe win7
 }
 ```
-
-::: warning
-You need to use `win7` instead of `win81` in the `winecfg` settings.
-:::
 
 ::: warning
 You might need to update the download url and hash.
