@@ -14,6 +14,8 @@ hero:
         { src: "/mikan.png", alt: "Mikan - Drawn by zoe_baskerville" },
         { src: "/lace.png", alt: "Lace - Drawn by zoe_baskerville" },
         { src: "/REN.png", alt: "REN - Drawn by zoe_baskerville" },
+        { src: "/image.webp", alt: "Zoran the wizard - Drawn by zoe_baskerville" },
+        
       ]
     show-arrows: hover
     cycle:
